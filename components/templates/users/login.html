@@ -1,0 +1,73 @@
+{% extends 'admin-base.html' %}
+
+{% block page_title %}Admin Login | AYN InfoTech Limited{% endblock %}
+
+{% block header %}
+{% endblock %}
+{% block content %}
+<!-- CONTENT
+================================================== -->
+<section class="border-primary">
+  <div class="container d-flex flex-column">
+    <div class="row align-items-center justify-content-center no-gutters min-vh-100">
+      <div class="col-8 col-md-6 col-lg-7 offset-md-1 order-md-2 mt-auto mt-md-0 pt-8 pb-4 py-md-11">
+
+        <!-- Image -->
+        <img src="/static/assets/img/illustrations/illustration-2.png" alt="..." class="img-fluid">
+
+      </div>
+      <div class="col-12 col-md-5 col-lg-4 order-md-1 mb-auto mb-md-0 pb-8 py-md-11">
+
+        <!-- Heading -->
+        <h1 class="mb-0 font-weight-bold text-center">
+          Sign in
+        </h1>
+
+        <!-- Text -->
+        <p class="mb-6 text-center text-muted">
+          Simplify your workflow in minutes.
+        </p>
+
+        <!-- Form -->
+        <form action="" method="POST" class="mb-6">
+
+          {% with messages = get_flashed_messages() %}
+          {% if messages %}
+          <div class="row justify-content-center">
+            <p style="color:red">{{ messages[0] }}</p>
+          </div>
+          {% endif %}
+          {% endwith %}
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">
+              Email
+            </label>
+            <input type="text" class="form-control" id="email" name="email" placeholder="address@domain.com">
+          </div>
+
+          <!-- Password -->
+          <div class="form-group mb-5">
+            <label for="password">
+              Password
+            </label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+          </div>
+
+          <!-- Submit -->
+          <button class="btn btn-block btn-primary" type="submit">
+            Sign in
+          </button>
+
+        </form>
+
+        <!-- Text -->
+        <p class="mb-0 font-size-sm text-center text-muted">
+          Don't have an account yet? <a href="signup-illustration.html">Sign up</a>.
+        </p>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+{% endblock %}

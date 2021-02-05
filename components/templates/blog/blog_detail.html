@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% block og_url %}https://www.ayninfotech.com{{ url_for(request.endpoint, url_endpoint=url_endpoint) }}{% endblock %}
+{% block canon %}{{ url_for(request.endpoint, url_endpoint=url_endpoint) }}{% endblock %}
+{% block page_title %}{{post.dashboard_title }} | AYN InfoTech Ltd{% endblock %}
+{% block meta_description %}{{post.description}}{% endblock %}
+{#{% block meta_keywords %}{{keywords}}{% endblock %}#} {% block custom_css %}
+{% block content %}
+<section class="blog_section">
+    <img src="{{ post.image_src }}" alt="{{ post.alt_text }}" class="img-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {{ post.title|safe }}
+                <p><a href="/" class="text_color">Home</a> > <a href="{{ url_for('mod_blog.blog_list') }}"
+                        class="text_color">Blogs</a> > <a href="#">{{ post.dashboard_title }}</a></p>
+                <div class="blog_detail_icon">{{ post.published_date }}<span class="float-right">
+                        <a href="#"><img src="/static/images/FooterSocial/facebook.png" alt="Facebook Image"></a>
+                        <a href="#"><img src="/static/images/FooterSocial/linkedin.png" alt="Linkedin Image"></a>
+                        <a href="#"><img src="/static/images/FooterSocial/twitter.png" alt="Twitter Image"></a>
+
+                    </span>
+
+                </div>
+            </div>
+            <div class="col-md-12">
+                {{ post.content|safe }}
+            </div>
+        </div>
+        {% if random_blogs.first() %}
+        <div class="related_blog_section">
+            <div class="col-md-12">
+                <div class="row">
+                    <h4>Related Blog</h4>
+                </div>
+            </div>
+            <div class="row">
+                {% for rec in random_blogs %}
+                <div class="col-md-4 col-12">
+                    <div class="text-center blog_div">
+                        <img src="/static/images/Blog/download.svg" alt="" class="img-fluid">
+                        <h4>{{ rec.dashboard_title }}</h4>
+                        <p class="blog_p_fixed">{{ rec.description }}</p>
+<!--                        <button type="button"-->
+<!--                            href="{{ url_for('mod_blog.blog_detail', url_endpoint=rec.url_endpoint) }}"-->
+<!--                            class="btn home_btn"> Read More </button>-->
+                        <p> <a href="{{ url_for('mod_blog.blog_detail', url_endpoint=rec.url_endpoint) }}"
+                                        class="btn home_btn">Read More</a>
+                                </p>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+            {% else %}
+            <section> {% endif %} </section>
+        </div>
+    </div>
+</section>
+
+<script>
+
+
+    (function ($) {
+        "use strict";
+
+        $(function () {
+            var header = $(".start-style");
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 10) {
+                    header.removeClass('start-style').addClass("scroll-on");
+                } else {
+                    header.removeClass("scroll-on").addClass('start-style');
+                }
+            });
+        });
+
+        //Animation
+
+        $(document).ready(function () {
+            $('body.hero-anime').removeClass('hero-anime');
+        });
+
+        //Menu On Hover
+
+        $('body').on('mouseenter mouseleave', '.nav-item', function (e) {
+            if ($(window).width() > 750) {
+                var _d = $(e.target).closest('.nav-item'); _d.addClass('show');
+                setTimeout(function () {
+                    _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+                }, 1);
+            }
+        });
+
+    })(jQuery);
+
+
+    $.fn.jQuerySimpleCounter = function (options) {
+        var settings = $.extend({
+            start: 0,
+            end: 100,
+            easing: 'swing',
+            duration: 400,
+            complete: ''
+        }, options);
+
+        var thisElement = $(this);
+
+        $({ count: settings.start }).animate({ count: settings.end }, {
+            duration: settings.duration,
+            easing: settings.easing,
+            step: function () {
+                var mathCount = Math.ceil(this.count);
+                thisElement.text(mathCount);
+            },
+            complete: settings.complete
+        });
+    };
+
+
+    $('#number1').jQuerySimpleCounter({ end: 12, duration: 3000 });
+    $('#number2').jQuerySimpleCounter({ end: 55, duration: 3000 });
+    $('#number3').jQuerySimpleCounter({ end: 359, duration: 2000 });
+    $('#number4').jQuerySimpleCounter({ end: 246, duration: 2500 });
+
+
+
+    (function ($) {
+        $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+            if (!$(this).next().hasClass('show')) {
+                $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+            }
+            var $subMenu = $(this).next(".dropdown-menu");
+            $subMenu.toggleClass('show');
+
+            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+                $('.dropdown-submenu .show').removeClass("show");
+            });
+
+            return false;
+        });
+    })(jQuery)
+</script>
+
+
+{% endblock content %}
+{% endblock %}

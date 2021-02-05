@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <base href="." />
+  <meta name="author" content="AYN Infotech Limited" />
+  <meta name="description" content="{% block meta_description %}AYN InfoTech delivers innovative technology solutions & consulting, helps clients to create & execute digital transformation strategies. We provide offshore development services by leveraging technologies like AI, Blockchain and IoT.{% endblock %}" />
+  <meta name="keywords" content="{% block meta_keywords %}Technology consulting, IT outsourcing, technology services, it service provider, ayn infotech, it company pune, rapid development, erp, crm, healthcare, ai, companies in pune, software development in pune, Off Shore Software development services, Best Digital Transformation Company, AI Software Company, Block Chain Software Company, Machine learning Software Company{% endblock %}" />
+
+  <link rel="canonical" href="https://www.ayninfotech.com{% block canon %}{% endblock %}">
+
+  <meta property="og:url" content="{% block og_url %}{% endblock %}" />
+  <meta property="og:title" content="{% block page_title %}AYN Infotech | IT Services, Digital Solutions, Technology Consulting{% endblock %}" />
+  <meta property="og:description" content="{{ self.meta_description() }}" />
+  <meta property="og:image" content="{% block og_image %}https://ayninfotech.com/static/assets/img/brand.png{% endblock %}" />
+
+  <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="/static/assets/fonts/Feather/feather.css">
+  <link rel="stylesheet" href="/static/assets/libs/aos/dist/aos.css">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/assets/css/theme.min.css?v=8">
+  <link rel="alternate" hreflang="x-default" href="{{ self.og_url() }}"/>
+  {% block custom_css %}{% endblock %}
+
+  <title>{{ self.page_title() }}</title>
+</head>
+<body class="bg-white">
+
+{% block header %}
+{% include 'partials/admin-header.html' %}
+{% endblock %}
+
+
+{% block content %}{% endblock %}
+
+<!-- FOOTER
+================================================== -->
+{% block footer %}
+{% include 'partials/admin-footer.html' %}
+{% endblock %}
+
+<!-- JAVASCRIPT
+================================================== -->
+<!-- Libs JS -->
+<script src="/static/assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="/static/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/static/assets/libs/aos/dist/aos.js"></script>
+<script src="/static/assets/libs/countup.js/dist/countUp.min.js"></script>
+<script src="/static/assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/static/assets/libs/typed.js/lib/typed.min.js"></script>
+
+<!-- Theme JS -->
+<script src="/static/assets/js/theme.min.js"></script>
+
+<!-- Chart JS-->
+<script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
+<script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+
+{% block custom_js %}{% endblock %}
+</body>
+</html>

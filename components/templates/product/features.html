@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% block og_url %}https://www.ayninfotech.com{{ url_for(request.endpoint) }}{% endblock %}
+{% block canon %}{{ url_for(request.endpoint) }}{% endblock %} {% block page_title %}{{title}}{% endblock %} {% block meta_description %}{{description}}{%
+endblock %} {% block meta_keywords %}{{keywords}}{% endblock %} {% block custom_css %}{% endblock %}
+{% block content %}
+<nav class="navigation" id="mainNav">
+    <a class="navigation__link1" href="#1"><span>Section 1</span></a>
+    <a class="navigation__link2" href="#2"><span>Section 2</span></a>
+</nav>
+
+<section class="AynHeroImg page-section" id="1"
+    style="background-image: url('/static/images/HomePageBg/HomeHero.png');">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="ProductHeroContent">
+                    <h1>{{ heading_1[0] }}{{ heading_1[1] }}</h1>
+                    <p>{{ para_1 }}</p>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="HomeImages" style="background-image: url('../static/images/HomePageBg/HomeTitle.png');">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Feature-->
+<section class="AynWorkStrategies d-flex align-items-center page-section" id="7"
+    style="background-image: url('../static/images/Features/1-Home\ –\ 20.png');">
+    <div class="container">
+        <div class="owl-carousel FeatureSlider">
+            {% for rec in features_2 %}
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="LeveragingContent">
+                            <h3>{{ heading_2[0] }}</h3>
+                            <h5>{{ rec[2] }}</h5>
+                            <p>{{ rec[3] }}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="../static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

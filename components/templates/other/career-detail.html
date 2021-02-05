@@ -1,0 +1,53 @@
+{% extends 'base.html' %} {% block og_url %}https://www.ayninfotech.com{{ url_for(request.endpoint) }}{% endblock %}
+{% block canon %}/careers/bde/{% endblock %} {% block page_title %}Current Job Opening for Business Development
+Executive | AYN InfoTech{% endblock %} {% block meta_description
+%}Currently, We have an opening for a Business Development Executive. Who has 2+ years of experience as a Business
+Development Executive?{% endblock %} {% block meta_keywords %}Business Development Executive{% endblock %}
+{% block custom_css %}{% endblock %} {% block content %}
+<nav class="navigation" id="mainNav">
+    <a class="navigation__link1" href="#1"><span>Section 1</span></a>
+    <a class="navigation__link2" href="#2"><span>Section 2</span></a>
+
+</nav>
+<section class="AynHeroImg page-section" id="1"
+    style="background-image: url('/static/images/HomePageBg/HomeHero.png');">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="ProductHeroContent AboutUs">
+                    <h1>{{heading_1[0]}}</h1>
+                    <p>{{para_1}}</p>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ image_1 }}" alt="{{ alt_text_1 }}" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <div class="HomeImages" style="background-image: url('../static/images/HomePageBg/HomeTitle.png');">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class=" jobDescription page-section" id="4">
+    <div class="container ">
+        <div class=" content-wrapper">
+            <div class="row ">
+                <div class="col-md-12">
+                    <h4>Job Description:</h4>
+                    <ol>
+                        <li>Good Communication skills. </li>
+                        <li>Looking for IT sales, International Marketing, Service sales.</li>
+                        <li>Cold Calling, Lead Generation.</li>
+                    </ol>
+                    <a href="mailto:hr@ayninfotech.com" class="home_btn">Apply</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

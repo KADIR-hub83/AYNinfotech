@@ -1,0 +1,260 @@
+{% extends 'base.html' %} {% block og_url %}https://www.ayninfotech.com{{ url_for(request.endpoint) }}{% endblock %}
+{% block canon %}{{ url_for(request.endpoint) }}{% endblock %} {% block page_title %}{{title}}{% endblock %} {% block meta_description
+%}{{description}}{% endblock %} {% block meta_keywords %}{{keywords}}{% endblock %}
+{% block custom_css %}{% endblock %} {% block content %}
+<nav class="navigation" id="mainNav">
+    <a class="navigation__link1" href="#1"><span>Section 1</span></a>
+    <a class="navigation__link2" href="#2"><span>Section 2</span></a>
+    <a class="navigation__link3" href="#3"><span>Section 3</span></a>
+    <a class="navigation__link4" href="#4"><span>Section 4</span></a>
+    <a class="navigation__link" href="#5"><span>Section 5</span></a>
+    <a class="navigation__link" href="#6"><span>Section 6</span></a>
+    <a class="navigation__link" href="#7"><span>Section 7</span></a>
+</nav>
+<!-- PRODUCT HEADING -->
+<section class="AynHeroImg page-section" id="1"
+    style="background-image: url('/static/images/HomePageBg/HomeHero.png');">
+    <div class="container">
+
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="ProductHeroContent">
+                    <h1>{{ heading_1[0] }}<br>{{ heading_1[1] }}</h1>
+
+                    <p>{{ para_1 }}</p>
+
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="HomeImages" style="background-image: url('../static/images/HomePageBg/HomeTitle.png');">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features of Product -->
+<section class="AynWorkStrategies d-flex align-items-center page-section" id="2"
+    style="background-image: url('../static/images/Product/1-Home\ –\ 8.png');">
+    <div class="container">
+        <div class="owl-carousel ProductFeatureSlider">
+            {% for rec in features_2 %}
+
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="LeveragingContent FeatureProduct">
+                            <h3>{{ heading_2[0] }}</h3>
+                            <h4>{{ rec[2] }}</h4>
+                            <p>{{ rec[3] }}</p>
+                            {% if heading_2[0] == 'Features of Pine CRM' %}
+                            <a href="/pine-customer-relationship-management/features" class="btn IndustryBtn">Read
+                                More</a>
+                            {% elif heading_2[0] == 'Features of Cedar Healthcare' %}
+                            <a href="/cedar-healthcare/features" class="btn IndustryBtn">Read More</a>
+                            {% elif heading_2[0] == 'Features of Walnut ERP' %}
+                            <a href="/walnut-enterprise-resource-planning/features" class="btn IndustryBtn">Read
+                                More</a>
+                            {% elif heading_2[0] == 'Features of Oak CBS' %}
+                            <a href="/oak-core-banking-solution/features" class="btn IndustryBtn">Read More</a>
+
+                            {% endif %}
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="../../static/images/Home/IoT.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- LEVERAGING TECHNOLOGIES -->
+<section class="AynWorkStrategies Leveraging d-flex align-items-center page-section page-section1" id="3"
+    style="background-image: url('../static/images/Product/1-Home\ –\ 9.png');">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="">
+                    <img src="{{ image_3 }}" alt="{{ alt_text_3 }}" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="LeveragingContent">
+                    <h3 class="">{{ heading_3[0] }}</h3>
+
+                    <p>{{ para_3 }}</p>
+
+                    <ul>
+                        {% for rec in features_3 %}
+                        <li>{{ rec }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- HOW -->
+<section class="AynWorkStrategies d-flex align-items-center page-section page-section1" id="4"
+    style="background-image: url('../static/images/Product/1-Home\ –\ 10.png');">
+    <div class="container">
+
+        <div class="row align-items-center">
+            <div class="col-md-12 text-center">
+
+            </div>
+            <div class="col-md-12">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-12 order-md-2 ">
+                        <div class="">
+                            <img src="{{ image_4 }}" alt="{{ alt_text_4 }}" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 order-md-1">
+                        <div class="LeveragingContent">
+                            <h3>{{ heading_4[0] }}</h3>
+                            <p>{{ para_4 }}</p>
+
+                            <ul>
+                                {% for rec in features_4 %}
+                                <li>{{ rec }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% if heading_2[0] == 'Features of Pine CRM' %}
+                            <a href="/pine-customer-relationship-management/what-is-crm" class="btn IndustryBtn mt-2">
+                                {% elif heading_2[0] == 'Features of Cedar Healthcare' %}
+                                <a href="/cedar-healthcare/what-is-healthcare" class="btn IndustryBtn mt-2">
+                                    {% elif heading_2[0] == 'Features of Walnut ERP' %}
+                                    <a href="/walnut-enterprise-resource-planning/what-is-erp"
+                                        class="btn IndustryBtn mt-2">
+                                        {% elif heading_2[0] == 'Features of Oak CBS' %}
+                                        <a href="/oak-core-banking-solution/what-is-cbs" class="btn IndustryBtn mt-2">
+
+                                            {% endif %}
+
+                                            Learn More
+                                        </a>
+                                    </a>
+                                </a>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Why Customer Choose Cedar Healthcare-->
+<section class="AynWorkStrategies d-flex align-items-center page-section" id="5"
+    style="background-image: url('../static/images/Product/1-Home\ –\ 11.png');">
+    <div class="container">
+        <div class="owl-carousel WhyChooseSlider">
+            {% for rec in features_5 %}
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="../static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="LeveragingContent WhyChoose">
+                            <h3>{{ heading_5[0] }}</h3>
+                            <h4>{{ rec[2] }}</h4>
+                            <p>{{ rec[3] }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Build your Healthcare as per your Requirements  -->
+<section class="BuildHealthCare page-section" id="6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 HeadingBuildHealthCare">
+                <h3> {{ heading_6[0] }} </h3>
+                <p> {{ para_6 }} </p>
+            </div>
+            <div class="col-md-5 p-0">
+                <div class="grid">
+                    <figure class="effect-lily">
+                        <img src="../static/images/Product/whatis/experience.jpg" alt="img12" />
+                        <figcaption>
+                            <div>
+                                <h4>{{ features_6[0][1] }}</h4>
+                                <p>{{ features_6[0][2] }}</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="col-md-7 p-0">
+                <div class="grid">
+                    <figure class="effect-lily">
+                        <img src="../static/images/Product/whatis/experience.jpg" alt="img1" />
+                        <figcaption>
+                            <div>
+                                <h4>{{ features_6[1][1] }}</h4>
+                                <p>{{ features_6[1][2] }}</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-7 p-0">
+                <div class="grid">
+                    <figure class="effect-lily">
+                        <img src="../static/images/Product/whatis/experience.jpg" alt="img12" />
+                        <figcaption>
+                            <div>
+                                <h4>{{ features_6[2][1] }}</h4>
+                                <p>{{ features_6[2][2] }}</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="col-md-5 p-0">
+                <div class="grid">
+                    <figure class="effect-lily">
+                        <img src="../static/images/Product/whatis/experience.jpg" alt="img1" />
+                        <figcaption>
+                            <div>
+                                <h4>{{ features_6[3][1] }}</h4>
+                                <p>{{ features_6[3][2] }}</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY AYN -->
+{% include 'partials/why_ayn.html' %} {% endblock %} {% block custom_js %}
+
+{% endblock %}

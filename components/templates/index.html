@@ -1,0 +1,671 @@
+{% extends 'base.html' %} {% block og_url %}https://www.ayninfotech.com{{ url_for(request.endpoint) }}{% endblock %}
+{% block canon %}{{ url_for(request.endpoint) }}{% endblock %} {% block custom_css %}{% endblock %}
+{% block content %}
+<nav class="navigation" id="mainNav">
+    <a class="navigation__link1" href="#1"><span>Section 1</span></a>
+    <a class="navigation__link2" href="#2"><span>Section 2</span></a>
+    <a class="navigation__link3" href="#3"><span>Section 3</span></a>
+    <a class="navigation__link4" href="#4"><span>Section 4</span></a>
+    <a class="navigation__link" href="#5"><span>Section 5</span></a>
+    <a class="navigation__link" href="#6"><span>Section 6</span></a>
+    <a class="navigation__link" href="#7"><span>Section 7</span></a>
+</nav>
+
+<!-----Tagline------->
+<section class="AynHeroImg page-section" id="1" style="background-image: url('static/images/HomePageBg/HomeHero.png');">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="HomeHeroContent">
+                    <h1>Your Satisfaction,<br> Our Achievement
+                    </h1>
+                    <h4>We are developers</h4>
+                    <p>Creating smart products and solutions with innovative ideas, strategies and approaches to
+                        enhance users' experience. </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- <img src="static/images/HomePageBg/HomeTitle.png" class="img-fluid"> -->
+                <div class="HomeImages" style="background-image: url('static/images/HomePageBg/HomeTitle.png');">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ayn Work Strategies Section -->
+<section class="AynWorkStrategies page-section" id="2"
+    style="background-image: url('static/images/HomePageBg/Statergies.png');">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="WorkStrategiesContent">
+                    <h2>Our Work Strategies</h2>
+                    <h4 class="H4Heading">Our Objective is Simple !</h4>
+                    <p>Develop customized products that are focused on enhancing the customer's experience. </p>
+                    <div class="WorkDistance">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="planning">
+                                    <h4>Smart Planning</h4>
+                                    <p>We believe in identifying challenges, opportunities and needs of the future
+                                        to
+                                        create
+                                        excellent products.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="planning">
+                                    <h4>Efficient Execution</h4>
+                                    <p>Focus on delivering an efficient solution by leveraging new-age technologies
+                                        like
+                                        AI, ML, Blockchain, and IoT.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="planning">
+                                    <h4>Timely Delivery</h4>
+                                    <p>AYN InfoTech is driven to meet client needs with strong determination. We
+                                        deliver
+                                        highly innovative and effective solutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- <div class="">
+                        <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                    </div> -->
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Ayn Industries -->
+<section class="AynWorkStrategies d-flex align-items-center page-section" id="3"
+    style="background-image: url('static/images/HomePageBg/Industry.png');">
+    <div class="container">
+        <div class="owl-carousel ServiceSlider">
+
+
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Artificial Intelligence & Machine Learning</h3>
+                            <!-- <h4>Our objective is simple !</h4> -->
+                            <p>In the era of digitization and globalization, industries are adopting new technologies.
+                                AYN InfoTech aims to make smart use of Artificial Intelligence, data science, BI and
+                                analytics to deliver unique, smart products
+                                and solutions. Artificial Intelligence and Machine Learning are applied to analyze and
+                                segregate data properly to generate predictive analysis about future trends and
+                                requirements.</p>
+                            <a href="/artificial-intelligence/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Blockchain</h3>
+                            <!-- <h4>Our objective is simple !</h4> -->
+                            <p>Blockchain Technology is rapidly replacing traditional ways of storing data and payment
+                                processes. With its decentralized structure, it becomes a powerful technology where
+                                stored data cannot be breached or tamper. As
+                                a leading blockchain-based company, we have implemented blockchain technology in our
+                                products, providing an immutable, transparent, distributed, fault-tolerant, secured,
+                                hackproof platform.</p>
+                            <a href="/blockchain/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Internet of Things</h3>
+                            <!-- <h4>Our objective is simple !</h4> -->
+                            <p>The Internet of Things is uniting the world through constant data updates. IoT helps
+                                easy
+                                interoperability, fast communication and data exchange, which help you connect
+                                things
+                                quickly, build a data-driven business,
+                                generate new insights and make data-driven decisions. AYN InfoTech leverages IoT to
+                                provide
+                                industry-specific solutions as products while maintaining data security.</p>
+                            <a href="/internet-of-things/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ayn Our Product -->
+<section class="AynWorkStrategies d-flex align-items-center page-section page-section1" id="4"
+    style="background-image: url('static/images/HomePageBg/product.png');">
+    <div class="container">
+        <div class="owl-carousel ProductSlider">
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Our Products </h3>
+                            <!-- <h4>Our objective is simple !</h4> -->
+                            <p><b>Pine CRM</b> is a SaaS-based CRM system for sales and marketing, handles customers'
+                                complex data to generate segregated information. Pine CRM software helps businesses of
+                                all sizes to build better customer relationships
+                                and improves marketing strategies for achieving higher sales targets. With Pine CRM
+                                solution, you can discover new possibilities to interact with customers, where you can
+                                grow your business like never before!</p>
+                            <a href="/pine-customer-relationship-management/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Our Products </h3>
+                            <!-- <h4>Our objective is simple !</h4> -->
+                            <p><b>Cedar Healthcare</b> Software is the next step in the healthcare industry. Cedar
+                                healthcare
+                                solution maintains medical records on the blockchain using Hyperledger. Cedar
+                                promises
+                                data
+                                security and complies with all standards
+                                and legal requirements for the maintenance of medical data. Use of blockchain
+                                technology
+                                ensures the immutability of data and hence the accuracy of Cedar's data. It also
+                                facilitates
+                                anonymized analytics for research
+                                purposes.</p>
+                            <a href="/cedar-healthcare/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Our Products </h3>
+                            <!-- <h4>Our objective is simple !</h4> -->
+                            <p><b>Oak CBS</b> is an agile solution that integrates seamlessly with the bank's core
+                                system. This approach enables banking and financial institutions to surround their
+                                legacy core platform and progressively transform their
+                                Core Banking System. It helps automate front-end and back-end processes of the bank to
+                                achieve centralized and smooth processing.We have a highly talented developers' team to
+                                deliver the best custom product.</p>
+                            <a href="/oak-core-banking-solution/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Our Products </h3>
+                            <!-- <h4>Our objective is simple !</h4> -->
+                            <p><b>Walnut ERP</b> is cloud-based business management software that helps companies easily
+                                manage processes like billing, accounting, warehouse, manufacturing, project management,
+                                and inventory management. Walnut Enterprise
+                                Resource Planning Software assists businesses of all sizes to manage mundane activities
+                                by effective interdepartmental communication.We have a highly talented developers' team
+                                to deliver the best custom product.
+                            </p>
+                            <a href="/walnut-enterprise-resource-planning/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ayn Counter -->
+<section class="page-section heightAuto" id="5">
+    <div id="projectFacts" class="sectionClass">
+        <div class="fullWidth eight columns">
+            <div class="projectFactsWrap ">
+                <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+                    <p id="number1" class="number">12+</p>
+                    <p>Clients</p>
+                </div>
+                <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+                    <p id="number2" class="number">55+</p>
+                    <p>Partners</p>
+                </div>
+                <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+                    <p id="number3" class="number">359+</p>
+                    <p>Strong Team</p>
+                </div>
+                <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+                    <p id="number4" class="number">246+</p>
+                    <p>Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ayn Industries We Serve -->
+<section class="AynWorkStrategies d-flex align-items-center page-section" id="6"
+    style="background-image: url('static/images/HomePageBg/IndustryWeServe.png');">
+    <div class="container">
+        <div class="owl-carousel IndustrySlider">
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Industry We Serve </h3>
+                            <h4>Digitizing Banking</h4>
+                            <p>Since the last few decades, the world has experienced a revolutionary change in the
+                                industrial, educational, and banking sectors. It is essential to understand as the world
+                                is digitalizing, people are becoming technology-friendly
+                                and expect smart products around them with proper security and functionality. The
+                                banking and financial sector faces many challenges to stay up with technologies and
+                                products—the technological blend with requirements
+                                that projects new capabilities for this sector. The new digitalized service helps them
+                                keep up with technological trends, eliminating the threat of becoming obsolete.</p>
+                            <a href="/banking/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Industry We Serve </h3>
+                            <h4>Accelerating Insurance</h4>
+                            <p>Digitalization has made insurers deal with new challenges due to the latest technologies
+                                and customers' technologically-driven demands. Insurance companies are facing
+                                significant challenges like lesser productivity,
+                                increase operational cost, fraudulent practices, and regulatory changes due to
+                                unawareness of digitalization. Moreover, technologies like IoT has changed the way the
+                                insurance company functions. Due to IoT, the
+                                insurance company has access to a large amount of customer data and can provide holistic
+                                pre-purchased and purchased information in an unstructured form.</p>
+                            <a href="/insurance/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Industry We Serve </h3>
+                            <h4>Reforming Education</h4>
+                            <p>AYN InfoTech is your partner in the change - we are working alongside you to enable
+                                success to your institution by helping you leverage technologies like Artificial
+                                Intelligence, Machine Learning, and IoT. We believe
+                                that future demands are more than just a Learning Management System (LMS). We have
+                                shifted our model with better strategies, methodologies where the product - integrated
+                                as per requirements to meet future challenges.
+                                Customizable models provide you with a unique connected experience across a broad way of
+                                capabilities that aim for excellence and a better experience.</p>
+                            <a href="/education/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Industry We Serve </h3>
+                            <h4>Rebuilding Telecom</h4>
+                            <p>In the ever-changing world, where 'change' is only constant, communication forms the
+                                major backbone of the digitalized world. Telecom Services provide always-on connectivity
+                                and infinite bandwidth for a seamless transition
+                                of services so that consumers can learn, explore, communicate, and entertain.
+                                Communication is essential in private as well as in the public sector. Telecom services
+                                support public service and provide a seamless
+                                network to various healthcare, transportation, utility, and banking industries.</p>
+                            <a href="/telecommunications/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Industry We Serve </h3>
+                            <h4>Revolutionizing Healthcare</h4>
+                            <p>The exponential increase in the adoption of digitalization is a massive challenge in the
+                                healthcare sector. As people shift to the digital world, the healthcare sector has to
+                                manage consumer experience and the latest
+                                technologies efficiently. The Healthcare sector must excel in scientific leadership and
+                                innovate the process throughout the system to create a digitalize physician and
+                                patient-centric experience.</p>
+                            <a href="/healthcare/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Industry We Serve </h3>
+                            <h4>Innovating Life Sciences</h4>
+                            <p>Thousands of lives are affected by technological advancement and innovation in life
+                                science. Biotech, medical devices, and pharmaceutical companies are innovating,
+                                digitizing at a faster rate to provide better and quicker
+                                service to enhance patient health life cycle. Each innovation in medical science saved
+                                more lives and increase lifespans. Meanwhile, life science, biotech, pharmaceutical, and
+                                medical devices companies face tremendous
+                                pressure to continue and provide such medical miracles timely.</p>
+                            <a href="/lifescience/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Industry We Serve </h3>
+                            <h4>Retail Solutions</h4>
+                            <p>Today, digital shopaholic people are seamlessly moving from online to offline channels,
+                                as these channels' services and experiences are getting blurred. The retail sector is
+                                undergoing major disrupting changes as the
+                                power of balance is shifted towards customers. "Customer experience" is the key to
+                                success for any industry. The retail sector focuses on creating a better customer
+                                experience and has to leverage various technologies
+                                like artificial intelligence, machine learning, IoT, and blockchain. Today's need is to
+                                provide a platform for a better user experience for both customers and retailers by
+                                aligning products and customer data efficiently.</p>
+                            <a href="/retail/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Industry We Serve </h3>
+                            <h4>Digitizing Automotive</h4>
+                            <p>The automotive industry is facing enormous changes brought by the digital revolution.
+                                Technologies and automation continuously influence consumers' demands. Even dealers and
+                                distributors are changing the very way to
+                                operate industry due to automation. Products are becoming more complex while maintaining
+                                safety compliances and environmental regulations by the implementation of technologies.
+                                Products are designed intelligently,
+                                keeping the focus on innovation, better connectivity, enhance efficiency, capacity, and
+                                mitigates costs.</p>
+                            <a href="/automotive/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Industry We Serve </h3>
+                            <h4>Media and Entertainment</h4>
+                            <p>The media industry is amid massive reinvention in the digitizing era. The industry
+                                faces
+                                enormous challenges, and technology acts as a medium to bridge the gap between
+                                industry and
+                                consumers. Media is a powerful tool
+                                for spreading awareness, and digitalization will support the media industry to
+                                perform
+                                better.</p>
+                            <a href="/media/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Industry We Serve </h3>
+                            <h4>Empowering Help</h4>
+                            <p>In the digitalization era, we help NGOs embrace new technologies and innovation to
+                                operate smartly and efficiently. As the world is shifting each day on new technologies
+                                like AI, Blockchain, and IoT, it is essential
+                                for everyone to walk hand in hand with these technologies. AYN InfoTech offers
+                                customized products and services with fresh thinking, insight, and experience to
+                                modernize and achieve your organization's maximum.
+                                We deliver solutions with a unique methodology and innovative thought process to cope
+                                with the latest technological trends.</p>
+                            <a href="/nonprofit/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Industry We Serve </h3>
+                            <h4>Government</h4>
+                            <p>The public sector is vastly innovating in recent years due to tremendous growth in
+                                technology and digitalization. The public sector is facing enormous challenges in coping
+                                up with the digital world. Digitalization helps
+                                the government to optimize the process and the way they deliver services to the public.
+                                By automating such procedures saves a lot of time and money.</p>
+                            <a href="/government/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Industry We Serve </h3>
+                            <h4>Automating Manufacturing</h4>
+                            <p>Manufacturing companies lag mainly due to the challenges like silos of data and
+                                miscommunication in the inter-departments. The incorrect inventory level leads to the
+                                unavailability of raw materials and hamper the growth
+                                of the organizations. The unawareness of technological advancement and the automation
+                                processes impacts significantly on the quality and quantity of products.</p>
+                            <a href="/manufacturing/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Industry We Serve </h3>
+                            <h4>Reinvent Logistic</h4>
+                            <p>With the commencement of the digital era, logistics industries are obligated to use
+                                technologies to redefine and manage businesses efficiently globally. The logistics
+                                industry is at the core of the global supply chain
+                                and is constantly evolving due to emerging new technological demands and new trends. It
+                                is important to provide modern business solutions along with the latest technological
+                                trends to keep customers updated with
+                                modern services and products.</p>
+                            <a href="/logistics/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="IndustryContent">
+                            <h3>Industry We Serve </h3>
+                            <h4>Hotel and Food Industry</h4>
+                            <p>The food industry is growing immensely in the last few years. The online food booking and
+                                home delivery service have changed the entire industry. Technologies are evolving each
+                                day, and it is essential for restaurants,
+                                whether big or small, to be updated with all the recent technologies to keep their
+                                business upfront. The high expectation of customers and delivery services is growing
+                                along with times. Moreover, hotel industries
+                                have also greatly influenced due to digitalization.</p>
+                            <a href="/hotel-food-industry/" class="btn IndustryBtn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certificate -->
+<!-- <section class="Certifications page-section heightAuto" id="7">
+    <div class="container">
+        <div class="row text-center ">
+            <div class="col-md-12">
+                <h3 class="wow fadeInUp mb-5" data-wow-duration="1s" data-wow-delay="1s">Certifications</h3>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6 col-12 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <img src="static/images/ISO-2015.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 col-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <img src="static/images/cmmi-3.png" class="img-fluid">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6 col-12 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <img src="static/images/Hippa.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 col-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <img src="static/images/ISO-2013.png" class="img-fluid">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+{% endblock %}

@@ -1,0 +1,140 @@
+{% extends 'admin-base.html' %}
+
+{% block page_title %}Admin Dashboard | AYN InfoTech Limited{% endblock %}
+
+{% block content %}
+    <div class="mt-9"></div>
+    <!-- MAIN
+    ================================================== -->
+    <main class="pt-2 pb-md-5 mt-md-n6">
+        <div class="container-md">
+
+            <form action="" method="POST">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+
+                        <!-- Card -->
+                        <div class="card card-bleed shadow-light-lg">
+                            <div class="card-header" style="display: ruby">
+
+                                <!-- Heading -->
+                                <h4 class="mb-0">
+                                    Detailed View
+                                </h4>
+                                <a class="btn btn-sm btn-outline-white font-weight-light fe fe-archive p-1 px-5 float-right" aria-hidden="true" href="{{ url_for('mod_users.customer_archive', id=post.id) }}"> Archive</a>
+                            </div>
+                            <div class="card-body">
+                                <section>
+                                    <table class="table table-responsive">
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Head</th>
+                                            <th scope="col">Value</th>
+
+                                            <th scope="col">#</th>
+                                            <th scope="col">Head</th>
+                                            <th scope="col">Value</th>
+
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        <tr>
+                                            <td scope="row">1</td>
+                                            <th>Name</th>
+                                            <td>{{ post.name }}</td>
+
+                                            <td scope="row">8</td>
+                                            <th>Contacted Through</th>
+                                            <td>{{ post.type }}</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row">2</td>
+                                            <th>Company</th>
+                                            <td><input class="border-left-0 border-right-0 border-top-0" type="text" name="company" value="{% if post.company %}{{ post.company }}{% endif %}"></td>
+
+                                            <td scope="row">9</td>
+                                            <th>Product</th>
+                                            <td><input class="border-left-0 border-right-0 border-top-0" type="text" name="product" value="{% if post.product %}{{ post.product }}{% endif %}"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row">3</td>
+                                            <th>Contact</th>
+                                            <td>{% if post.phone_number %}{{ post.phone_number }}{% endif %}</td>
+
+                                            <td scope="row">10</td>
+                                            <th>Service</th>
+                                            <td><input class="border-left-0 border-right-0 border-top-0" type="text" name="product_service" value="{% if post.product_service %}{{ post.product_service }}{% endif %}"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row">4</td>
+                                            <th>Email</th>
+                                            <td>{% if post.email %}{{ post.email }}{% endif %}</td>
+
+                                            <td scope="row">11</td>
+                                            <th>Salesperson</th>
+                                            <td><input class="border-left-0 border-right-0 border-top-0" type="text" name="sales_person" value="{% if post.sales_person %}{{ post.sales_person }}{% endif %}"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row">5</td>
+                                            <th>Number of Employees </th>
+                                            <td>{% if post.no_of_employees %}{{ post.no_of_employees }}{% endif %}</td>
+
+                                            <td scope="row">12</td>
+                                            <th>Task Status</th>
+                                            <td>
+                                                <select name="sale_status" id="sale_status">
+                                                    {% for rec in sale_status %}
+                                                        {% if rec.name == post.sale_status.name %}
+                                                            <option value="{{ rec.name }}" selected>{{rec.value[0]}}</option>
+                                                        {% else %}
+                                                            <option value="{{ rec.name }}">{{rec.value[0]}}</option>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </select>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row">6</td>
+                                            <th>Job Title</th>
+                                            <td>{% if post.job_title %}{{ post.job_title }}{% endif %}</td>
+
+                                            <td scope="row">13</td>
+                                            <th>Cost</th>
+                                            <td><input class="border-left-0 border-right-0 border-top-0" type="text" name="project_cost" value="{% if post.project_cost %}{{ post.project_cost }}{% endif %}"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row">7</td>
+                                            <th>Comment</th>
+                                            <td style="word-break: break-all">{% if post.comments %}{{ post.comments }}{% endif %}</td>
+
+                                            <td scope="row">14</td>
+                                            <th>Sales Comment</th>
+                                            <td><textarea  class="border-left-0 border-right-0 border-top-0" rows="2" col="20" id="sales_comments" name="sales_comments">{% if post.sales_comments %}{{ post.sales_comments }}{% endif %}</textarea></td>
+
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <div class="col text-center">
+                                        <button type="submit" class="btn text-white" style="background-color: #384c74 !important" aria-hidden="true" href="/admin/dashboard/detail/{{ post.id }}">Update Record</button>
+                                        <a class="btn text-white ml-3 pl-7 pr-7" style="background-color: #384c74 !important" aria-hidden="true" href="{{ url_for('mod_users.dashboard')}}">Go Back</a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> <!-- / .row -->
+            </form>
+        </div> <!-- / .container -->
+    </main>
+{% endblock %}

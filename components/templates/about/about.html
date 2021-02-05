@@ -1,0 +1,135 @@
+{% extends 'base.html' %} {% block og_url %}https://www.ayninfotech.com{{ url_for(request.endpoint) }}{% endblock %}
+{% block canon %}{{ url_for(request.endpoint) }}{% endblock %} {% block page_title %}About Us | AYN InfoTech
+Limited{% endblock %} {% block
+meta_description %}AYN InfoTech is an independent, leading IT firm specialized in digital transformation with efficient
+Enterprise business applications and implementations.{% endblock %} {% block meta_keywords %}About Us, Mobile & Web
+Application Development, Customized Software Development, Software Development, IT Services{% endblock %} {% block
+custom_css %}{% endblock %} {% block content %}
+<nav class="navigation" id="mainNav">
+    <a class="navigation__link1" href="#1"><span>Section 1</span></a>
+    <a class="navigation__link2" href="#2"><span>Section 2</span></a>
+    <a class="navigation__link3" href="#3"><span>Section 3</span></a>
+    <a class="navigation__link4" href="#4"><span>Section 4</span></a>
+
+</nav>
+<!--About us-->
+<section class="AynHeroImg page-section" id="1"
+    style="background-image: url('../static/images/HomePageBg/HomeHero.png');">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="ProductHeroContent AboutUs">
+                    <h1>About Us
+                    </h1>
+                    <!-- <h4>We are developers</h4> -->
+                    <p>Leading IT organization offering end-to-end services in Customized Software Development,
+                        Mobile & Web Application Development & SAAS/IoT/AI/ML.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="HomeImages" style="background-image: url('../static/images/HomePageBg/HomeTitle.png');">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Shaping Ideas  -->
+<section class="AynWorkStrategies  d-flex align-items-center page-section" id="2"
+    style="background-image: url('../static/images/Product/');">
+    <div class="container">
+
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="LeveragingContent ShapingIdeas">
+                    <h3><span>Shaping</span> Ideas
+                    </h3>
+                    <!-- <h4>Our objective is simple !</h4> -->
+                    <p>AYN InfoTech Limited is an independent, leading IT firm specialized in the emerging digital
+                        transformation with efficient Enterprise business applications (CRM, ERP, CBS, Healthcare)
+                        implementations, ranging from mid to large-sized private and public sector organizations
+                        globally. We work on innovative ideas by leveraging technologies like AI, Blockchain, and
+                        IoT to provide excellent products and services.
+                    </p>
+                    <p>
+                        Our services are customer-centric and deal with the client’s business transformation
+                        objectives by transforming its people, processes, and technology by adapting to unique
+                        methodology.
+                    </p>
+                    <p>
+                        Our business ethics and operations are guided by our vision to be the most customer-centric
+                        and valued Information Technology brand in the Industry.
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+
+                <div class="">
+                    <img src="../static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ayn Counter -->
+<section class="page-section heightAuto" id="3">
+    <div id="projectFacts" class="sectionClass">
+        <div class="fullWidth eight columns">
+            <div class="projectFactsWrap ">
+                <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+                    <p id="number1" class="number">12+</p>
+                    <p>Clients</p>
+                </div>
+                <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+                    <p id="number2" class="number">55+</p>
+                    <p>Partners</p>
+                </div>
+                <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+                    <p id="number3" class="number">359+</p>
+                    <p>Strong Team</p>
+                </div>
+                <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+                    <p id="number4" class="number">246+</p>
+                    <p>Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certificate -->
+<section class="Certifications page-section heightAuto" id="4">
+    <div class="container">
+        <div class="row text-center ">
+            <div class="col-md-12">
+                <h3 class="wow fadeInUp mb-5" data-wow-duration="1s" data-wow-delay="1s">Certifications</h3>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6 col-12 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <img src="../static/images/ISO-2015.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 col-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <img src="../static/images/cmmi-3.png" class="img-fluid">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6 col-12 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <img src="../static/images/Hippa.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 col-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <img src="../static/images/ISO-2013.png" class="img-fluid">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

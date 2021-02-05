@@ -1,0 +1,279 @@
+<div Id="custnav" class=" sticky cust_mg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 cust_nav">
+                <div class="pt-3 pb-3">
+                    <a class="" href="/">
+                        <img src="/static/images/logo.png" class="navbar-brand-img" alt="AYN InfoTech Ltd.">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-10 cust_nav">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+
+
+                        <!-- Toggler -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Collapse -->
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                            <!-- Toggler -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <i class="fa fa-times" aria-hidden="true"></i> </button>
+
+                            <!-- Navigation -->
+                            <ul class="navbar-nav ml-auto">
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown"
+                                        href="#" aria-haspopup="true" aria-expanded="false">
+                                        Products
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+                                        <li class="dropdown-item dropright">
+                                            <a class="dropdown-link dropdown-toggle" data-toggle="dropdown">
+                                                Cedar Healthcare <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="{{ url_for('mod_product.cedar') }}">
+                                                    Overview
+                                                </a>
+                                                <a class="dropdown-item"
+                                                    href="{{ url_for('mod_product.what_is_healthcare') }}">
+                                                    What is Healthcare?
+                                                </a>
+                                                <a class="dropdown-item"
+                                                    href="{{ url_for('mod_product.cedar_features') }}">
+                                                    Features
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown-item dropright">
+                                            <a class="dropdown-link dropdown-toggle" data-toggle="dropdown" href="#">
+                                                Pine CRM <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="{{ url_for('mod_product.pine') }}">
+                                                    Overview
+                                                </a>
+                                                <a class="dropdown-item"
+                                                    href="{{ url_for('mod_product.what_is_crm') }}">
+                                                    What is CRM?
+                                                </a>
+                                                <a class="dropdown-item"
+                                                    href="{{ url_for('mod_product.pine_features') }}">
+                                                    Features
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown-item dropright">
+                                            <a class="dropdown-link dropdown-toggle" data-toggle="dropdown"
+                                                href="Oak CBS.html">
+                                                Oak CBS <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="{{ url_for('mod_product.oak') }}">
+                                                    Overview
+                                                </a>
+                                                <a class="dropdown-item"
+                                                    href="{{ url_for('mod_product.what_is_cbs') }}">
+                                                    What is CBS?
+                                                </a>
+                                                <a class="dropdown-item"
+                                                    href="{{ url_for('mod_product.oak_features') }}">
+                                                    Features
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown-item dropright">
+                                            <a class="dropdown-link dropdown-toggle" data-toggle="dropdown"
+                                                href="Walnut ERP.html">
+                                                Walnut ERP <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="{{ url_for('mod_product.walnut') }}">
+                                                    Overview
+                                                </a>
+                                                <a class="dropdown-item"
+                                                    href="{{ url_for('mod_product.what_is_erp') }}">
+                                                    What is ERP?
+                                                </a>
+                                                <a class="dropdown-item"
+                                                    href="{{ url_for('mod_product.walnut_features') }}s">
+                                                    Features
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#"
+                                        aria-haspopup="true" aria-expanded="false"> Industries </a>
+                                    <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+                                        <div class="row no-gutters">
+                                            <div class="col-6 col-mobile-12">
+                                                <div class="row no-gutters">
+                                                    <div class="col-12">
+
+                                                        <!-- List -->
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_service.banking') }}">
+                                                            Banking </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_service.insurance') }}">
+                                                            Insurance </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_service.education') }}">
+                                                            Education </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_service.telecommunications') }}">
+                                                            Telecom </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_service.healthcare') }}">
+                                                            Healthcare </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_service.lifescience') }}">
+                                                            Life Sciences </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_service.retail') }}">
+                                                            Retail </a>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-mobile-12">
+                                                <div class="row no-gutters">
+                                                    <div class="col-12 ">
+                                                        <!-- List -->
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_service.automotive') }}"> Automotive
+                                                        </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_service.media') }}"> Media </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_service.nonprofit') }}"> Non-Profit
+                                                        </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_service.government') }}"> Government
+                                                        </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_service.manufacturing') }}">
+                                                            Manufacturing </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_service.logistics') }}"> Logistics
+                                                        </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_service.hotel_food_industry') }}">
+                                                            Hotel & Food Industry </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / .row -->
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Services </a>
+                                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-lg1"
+                                        aria-labelledby="navbarPages">
+                                        <div class="row no-gutters">
+                                            <div class="col-12 col-mobile-12">
+                                                <div class="row no-gutters">
+                                                    <div class="col-12">
+                                                        <a class="dropdown-item" href="{{ url_for('mod_need.ai') }}">
+                                                            Artificial Intelligence </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_need.blockchain') }}">
+                                                            Blockchain </a>
+                                                        <a class="dropdown-item" href="{{ url_for('mod_need.iot') }}">
+                                                            Internet of Things </a>
+                                                        <a class="dropdown-item cusmb-5 mb-lg-0"
+                                                            href="{{ url_for('mod_need.analytics') }}">
+                                                            Smart Analytics </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        About </a>
+                                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-lg1"
+                                        aria-labelledby="navbarPages">
+                                        <div class="row no-gutters">
+                                            <div class="col-12  ">
+                                                <div class="row no-gutters">
+                                                    <div class="col-12">
+                                                        <a class="dropdown-item" href="{{ url_for('about_us_new') }}">
+                                                            About Us </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_about.our_story') }}">
+                                                            Our Values </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_about.vision') }}">
+                                                            Vision & Mission </a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ url_for('mod_about.leadership') }}">
+                                                            Leadership </a>
+                                                        <a class="dropdown-item  cusmb-5 mb-lg-0"
+                                                            href="{{ url_for('mod_about.investors') }}">
+                                                            Investor Relations </a>
+                                                        <a class="dropdown-item   cusmb-5 mb-lg-0"
+                                                            href="{{ url_for('mod_about.faq') }}">
+                                                            FAQ </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a class="nav-link " id="navbarAccount" href="{{ url_for('career') }}"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Careers </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " id="navbarAccount" href="{{ url_for('mod_blog.blog_list') }}"
+                                        saria-haspopup="true" aria-expanded="false">
+                                        Blog </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " id="navbarAccount" href="{{ url_for('contact') }}"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Contact </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+
+
+
+            </div>
+        </div>
+        <!-- / .row -->
+    </div>
+    <!-- / .container -->
+</div>

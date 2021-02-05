@@ -1,0 +1,148 @@
+{% extends 'base.html' %} {% block og_url %}https://www.ayninfotech.com{{ url_for(request.endpoint) }}{% endblock %}
+{% block canon %}{{ url_for(request.endpoint) }}{% endblock %} {% block page_title %}Sitemap | AYN InfoTech
+Limited{% endblock %} {% block
+meta_description %}Leadership. AYN InfoTech is the fastest growing IT company in India. We have a powerful team of
+people elected by us to represent our firm globally.{% endblock %} {% block meta_keywords %}Sitemap, Website Sitemap,
+AYN InfoTech Sitemap, Route for Website{% endblock %} {% block
+custom_css %}{% endblock %} {% block content %}
+<section class="AynHeroImg page-section" id="1"
+    style="background-image: url('../static/images/HomePageBg/HomeHero.png');">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="ProductHeroContent Sitemap">
+                    <h1>Sitemap
+
+                    </h1>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="HomeImages" style="background-image: url('../static/images/HomePageBg/HomeTitle.png');">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="privacy page-section" id="1">
+    <div class="container">
+        <div class="row siteBottom">
+            <div class="col-md-6 ">
+                <div class="sitemap">
+                    <h4>About Us</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><a href="{{ url_for('about_us_new') }}"> About Us</a></p>
+                            <p><a href="{{ url_for('mod_about.our_story') }}"> Our Values</a></p>
+                            <p><a href="{{ url_for('mod_about.leadership') }}">Leadership</a></p>
+                            <p><a href="{{ url_for('privacy_policy') }}">Privacy Policy</a></p>
+                            <p><a href="{{ url_for('mod_about.vision') }}"> Vision & Mission</a></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><a href="{{ url_for('mod_about.investors') }}">Investor Relations</a></p>
+                            <p><a href="{{ url_for('mod_about.faq') }}">FAQ</a></p>
+                            <p><a href="{{ url_for('career') }}">Careers</a></p>
+                            <p><a href="{{ url_for('contact') }}">Contact</a></p>
+                            <p><a href="{{ url_for('mod_blog.blog_list') }}">Blog</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="sitemap">
+                    <h4>Industries</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><a href="{{ url_for('mod_service.banking') }}"> Banking</a></p>
+                            <p><a href="{{ url_for('mod_service.lifescience') }}"> Life Sciences</a></p>
+                            <p><a href="{{ url_for('mod_service.government') }}">Government</a></p>
+                            <p><a href="{{ url_for('mod_service.insurance') }}">Insurance</a></p>
+                            <p><a href="{{ url_for('mod_service.retail') }}"> Retail</a></p>
+                            <p><a href="{{ url_for('mod_service.manufacturing') }}">Manufacturing</a></p>
+                            <p><a href="{{ url_for('mod_service.education') }}">Education</a></p>
+                        </div>
+                        <div class="col-md-6">
+
+                            <p><a href="{{ url_for('mod_service.automotive') }}">Automotive</a></p>
+                            <p><a href="{{ url_for('mod_service.logistics') }}">Logistics</a></p>
+                            <p><a href="{{ url_for('mod_service.telecommunications') }}">Telecom</a></p>
+                            <p><a href="{{ url_for('mod_service.media') }}">Media</a></p>
+                            <p><a href="{{ url_for('mod_service.hotel_food_industry') }}">Hotel & Food</a></p>
+                            <p><a href="{{ url_for('mod_service.healthcare') }}">Healthcare</a></p>
+                            <p><a href="{{ url_for('mod_service.nonprofit') }}">Non-Profit</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row siteBottom">
+            <div class="col-md-6 ">
+                <div class="sitemap">
+                    <h4>Products</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><a href="{{ url_for('mod_product.cedar') }}"> Cedar Healthcare</a></p>
+                            <p><a href="{{ url_for('mod_product.pine') }}"> Pine CRM</a></p>
+
+                        </div>
+                        <div class="col-md-6">
+                            <p><a href="{{ url_for('mod_product.oak') }}">Oak CBS</a></p>
+                            <p><a href="{{ url_for('mod_product.walnut') }}">Walnut ERP</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="sitemap">
+                    <h4>Services</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><a href="{{ url_for('mod_need.ai') }}"> Artificial Intelligence</a></p>
+                            <p><a href="{{ url_for('mod_need.blockchain') }}"> Blockchain</a></p>
+
+                        </div>
+                        <div class="col-md-6">
+                            <p><a href="{{ url_for('mod_need.iot') }}">Internet of Things</a></p>
+                            <p><a href="{{ url_for('mod_need.analytics') }}">Smart Analytics</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 sitemap">
+                <h4>Subsidiaries</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 ">
+                <div class="sitemap">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><a href="https://ayatmotors.com/"> AYN Industries Ltd</a></p>
+                            <p><a href="https://ayngroups.com/"> AYN Holdings Pvt Ltd</a></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><a href="https://www.fastpayu.com/">Fastpay Online India Pvt Ltd</a></p>
+                            <p><a href="#">AYN Logistics Pvt Ltd</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="sitemap">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><a href="https://www.worldteam11.com/">Worldteam11 Fantasy Pvt Ltd</a></p>
+                            <p><a href="https://www.atzcart.com/">ATZ Cart Pvt Ltd</a></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><a href="https://ayninfra.com/">AYN Infrastructure Pvt Ltd</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,35 @@
+User-agent: *
+
+Allow: /
+Disallow: /mohammed-zaffer/
+Disallow: /abhishek-chaudhary/
+Disallow: /abhishek-chaudha/
+Disallow: /Nasrin-sheikh
+Disallow: /nasrin-sheikh/
+Disallow: /social-media-marketing
+Disallow: /social-media-optimization
+Disallow: /games
+Disallow: /mobile-game-development-tools
+Disallow: /digital-marketing-persona
+Disallow: /search-engine-optimization
+Disallow: /pay-per-click
+Disallow: /technical-seo-ways
+Disallow: /fate-of-campaign-marketing
+Disallow: /high-time-you-need-mobile-friendly-website
+Disallow: /digital-marketing-new-era-of-connecting
+Disallow: /increase-ecommerce-sales-in-no-time
+Disallow: /blog-details/98
+Disallow: /service/private-sector/
+Disallow: /education-erp
+Disallow: /real-estate
+Disallow: /facility-management-view
+Disallow: /digital-and-content-services
+Disallow: /software-product-engineering-services
+Disallow: /supply-chain-management-services
+Disallow: /digital-and-content-services-view
+Disallow: /travel-transportation-logistics-and-hospitality
+Disallow: /real-estate-view/
+Disallow: /Walnut ERP.html
+Disallow: /Oak CBS.html
+Disallow: /Pine CRM.html
+Sitemap: https://www.ayninfotech.com/sitemap.xml

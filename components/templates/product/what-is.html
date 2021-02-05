@@ -1,0 +1,221 @@
+{% extends 'base.html' %} {% block og_url %}https://www.ayninfotech.com{{ url_for(request.endpoint) }}{% endblock %}
+{% block canon %}{{ url_for(request.endpoint) }}{% endblock %} {% block page_title %}{{title}}{% endblock %} {% block meta_description %}{{description}}{%
+endblock %} {% block meta_keywords %}{{keywords}}{% endblock %} {% block custom_css %}{% endblock %}
+{% block content %}
+<nav class="navigation" id="mainNav">
+    <a class="navigation__link1" href="#1"><span>Section 1</span></a>
+    <a class="navigation__link2" href="#2"><span>Section 2</span></a>
+    <a class="navigation__link3" href="#3"><span>Section 3</span></a>
+    <a class="navigation__link4" href="#4"><span>Section 4</span></a>
+    <a class="navigation__link" href="#5"><span>Section 5</span></a>
+</nav>
+<!-----What is--------->
+<section class="AynHeroImg page-section" id="1"
+    style="background-image: url('/static/images/HomePageBg/HomeHero.png');">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="ProductHeroContent">
+                    <h1>{{ heading_1[0] }} {{ heading_1[1] }}</h1>>
+                    <p>{{ para_1 }}</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="HomeImages" style="background-image: url('../static/images/HomePageBg/HomeTitle.png');">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- What does it do? -->
+<section class="AynWorkStrategies d-flex align-items-center page-section" id="2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="LeveragingContent">
+                    <h3>{{ heading_2[0] }}</h3>
+                    <p>{{ para_2 }}</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row ">
+                    <div class="col-md-6 p-0 WhatDoes">
+                        <div class="grid">
+                            <figure class="effect-lily">
+                                <img src="../static/images/Product/whatis/experience.jpg" alt="img12" />
+                                <figcaption>
+                                    <div>
+                                        <h4>{{ features_2[0][1] }}</h4>
+                                        <p>{{ features_2[0][2] }}</p>
+                                    </div>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="grid">
+                            <figure class="effect-lily">
+                                <img src="../static/images/Product/whatis/experience.jpg" alt="img12" />
+                                <figcaption>
+                                    <div>
+                                        <h4>{{ features_2[1][1] }}</h4>
+                                        <p>{{ features_2[1][2] }}</p>
+                                    </div>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-0 NextWhat">
+                        <div class="grid">
+                            <figure class="effect-lily">
+                                <img src="../static/images/Product/whatis/experience.jpg" alt="img12" />
+                                <figcaption>
+                                    <div>
+                                        <h4>{{ features_2[2][1] }}</h4>
+                                        <p>{{ features_2[2][2] }}</p>
+                                    </div>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="grid">
+                            <figure class="effect-lily">
+                                <img src="../static/images/Product/whatis/experience.jpg" alt="img12" />
+                                <figcaption>
+                                    <div>
+                                        <h4>{{ features_2[3][1] }}</h4>
+                                        <p>{{ features_2[3][2] }}</p>
+                                    </div>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="grid">
+                            <figure class="effect-lily">
+                                <img src="../static/images/Product/whatis/experience.jpg" alt="img12" />
+                                <figcaption>
+                                    <div>
+                                        <h4>{{ features_2[4][1] }}</h4>
+                                        <p>{{ features_2[4][2] }}</p>
+                                    </div>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Healthcare Software Matter? -->
+<section class="AynWorkStrategies Leveraging d-flex align-items-center page-section page-section1" id="3"
+    style="background-image: url('../static/images/Whatis/1-Home\ –\ 16@2x.png');">
+    <div class="container">
+
+        <div class="row align-items-center">
+            <div class="col-md-6">
+
+                <div class="">
+                    <img src="../static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="LeveragingContent">
+                    <h3>{{ heading_3[0] }}</h3>
+                    </h3>
+
+                    <ul>
+                        {% for rec in features_3 %}
+                        <li>{{ rec }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Technologies  -->
+<section class="AynWorkStrategies d-flex align-items-center page-section" id="4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <div class="LeveragingContent text-center">
+                    <h3>{{ heading_4[0] }}</h3>
+                </div>
+            </div>
+            <div class="col-md-12 MainTechnology">
+                <div class="row">
+                    <div class="col-md-6 p-0">
+                        <div class="grid">
+                            <figure class="effect-lily">
+                                <img src="../static/images/Product/whatis/experience.jpg" alt="img12" />
+                                <figcaption>
+                                    <div>
+                                        <h4>{{ features_4[0][1] }}</h4>
+                                        <p>{{ features_4[0][2] }}</p>
+                                    </div>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-0">
+                        <div class="grid">
+                            <figure class="effect-lily">
+                                <img src="../static/images/Product/whatis/experience.jpg" alt="img12" />
+                                <figcaption>
+                                    <div>
+                                        <h4>{{ features_4[1][1] }}</span></h4>
+                                        <p>{{ features_4[1][2] }}</p>
+                                    </div>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="Bottom">
+                        <div class="grid">
+                            <figure class="effect-lily">
+                                <img src="../static/images/Product/whatis/experience.jpg" alt="img12" />
+                                <figcaption>
+                                    <div>
+                                        <h4>{{ features_4[2][1] }}</h4>
+                                        <p>{{ features_4[2][2] }}</p>
+                                    </div>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Think What's Next? -->
+<section class="AynWorkStrategies d-flex align-items-center page-section" id="7"
+    style="background-image: url('../static/images/Whatis/1-Home\ –\ 18@2x.png');">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="">
+                    <img src="../static/images/Services/AI-Hero-33.svg" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="LeveragingContent WhyAyN">
+                    <h3>{{ heading_5[0] }}</h3>
+                    <h4>{{ title_5[0] }} {{ title_5[1] }} {{ title_5[2] }}</h4>
+                    <p>{{ para_5 }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,8 @@
+/.idea/
+**/__pycache__
+ayn_infotech_website.sock*
+/envs/
+wsgi.py
+*.sqlite3
+/envs/
+/migrations/

@@ -1,0 +1,143 @@
+{% extends 'base.html' %} {% block og_url %}https://www.ayninfotech.com{{ url_for(request.endpoint) }}{% endblock %}
+{% block canon %}{{ url_for(request.endpoint) }}{% endblock %} {% block page_title %}Our Values | AYN Infotech
+Limited{% endblock %} {% block
+meta_description %}AYN InfoTech believes in listening and partnering rather than analyzing and telling, our
+trust-building with clients and partners is always the highest priority.{% endblock %}
+{% block meta_keywords %}Discipline, Excellence, Fun, Innovation,
+Team Spirit, Transparency{% endblock %} {% block custom_css %}{% endblock %} {% block content %}
+<nav class="navigation" id="mainNav">
+    <a class="navigation__link1" href="#1"><span>Section 1</span></a>
+    <a class="navigation__link2" href="#2"><span>Section 2</span></a>
+    <a class="navigation__link3" href="#3"><span>Section 3</span></a>
+    <a class="navigation__link4" href="#4"><span>Section 4</span></a>
+    <a class="navigation__link" href="#5"><span>Section 5</span></a>
+    <a class="navigation__link" href="#6"><span>Section 6</span></a>
+    <a class="navigation__link" href="#7"><span>Section 7</span></a>
+</nav>
+<!--We are AYNians-->
+<section class="AynHeroImg page-section" id="1"
+    style="background-image: url('../static/images/HomePageBg/HomeHero.png');">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="ProductHeroContent AYNians">
+                    <h1>{{ heading_1[0] }}{{ heading_1[1] }}</h1>
+                    <p>{{ para_1 }}</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="HomeImages" style="background-image: url('../static/images/HomePageBg/HomeTitle.png');">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Values   -->
+<section class="BuildHealthCare ourvalues heightAuto page-section" id="3"
+    style="background-image: url('../static/images/Product/1-Home\ –\ 13.png');">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12  mb-3  Heading text-center">
+                <h3>{{ heading_2[0] }}{{ heading_2[1] }}</h3>
+                <p>{{ para_2 }}</p>
+
+            </div>
+            <div class="col-md-5 p-0">
+                <div class="grid">
+                    <figure class="effect-lily">
+                        <img src="../static/images/Product/whatis/experience.jpg" alt="img12" />
+                        <figcaption>
+                            <div>
+                                <h4> Commitment </span></h4>
+                                <p>We commit to an encouraging, positive, caring and supportive environment. We share
+                                    responsibilities to support team members and enrich lives.</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="col-md-7 p-0">
+                <div class="grid">
+                    <figure class="effect-lily">
+                        <img src="../static/images/Product/whatis/experience.jpg" alt="img1" />
+                        <figcaption>
+                            <div>
+                                <h4> Excellence </span></h4>
+                                <p>We ensure to provide customers with reliable products and services at competitive
+                                    prices with quality work, which focuses on delivery with an outstanding experience.
+                                </p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-7 p-0">
+                <div class="grid">
+                    <figure class="effect-lily">
+                        <img src="../static/images/Product/whatis/experience.jpg" alt="img12" />
+                        <figcaption>
+                            <div>
+                                <h4> Innovation </span></h4>
+                                <p>Its the process of discovering and transforming, which we taught in our pulse to
+                                    think ahead of time. It's a never-ending process at our end.</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="col-md-5 p-0">
+                <div class="grid">
+                    <figure class="effect-lily">
+                        <img src="../static/images/Product/whatis/experience.jpg" alt="img1" />
+                        <figcaption>
+                            <div>
+                                <h4> Passion </span></h4>
+                                <p>About learning and strive to innovate and improve constantly. We are not afraid of
+                                    adopting new methodologies. We learn from others and from our mistakes, challenges
+                                    and successes.</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-5 p-0">
+                <div class="grid">
+                    <figure class="effect-lily">
+                        <img src="../static/images/Product/whatis/experience.jpg" alt="img12" />
+                        <figcaption>
+                            <div>
+                                <h4> Discipline</span></h4>
+                                <p>Maintaining thresholds of performance and focusing on every single activity with high
+                                    standards to meet our targets. Self-disciplined team members always strive for a
+                                    better and better experience with elegance in all our deliverables.</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="col-md-7 p-0">
+                <div class="grid">
+                    <figure class="effect-lily">
+                        <img src="../static/images/Product/whatis/experience.jpg" alt="img1" />
+                        <figcaption>
+                            <div>
+                                <h4> Adaptability </span></h4>
+                                <p> We adapt to new technological trends, solutions and services to provide the best
+                                    solution to our clients. We always strive to adapt new methodologies, techniques and
+                                    challenges.</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

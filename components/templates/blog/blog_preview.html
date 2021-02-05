@@ -1,0 +1,86 @@
+{% extends 'admin-base.html' %}
+
+{% block og_url %}https://www.ayninfotech.com{{ url_for(request.endpoint, id=id) }}{% endblock %}
+{% block canon %}{{ url_for(request.endpoint, id=id) }}{% endblock %}
+
+{% block page_title %}Blog Editor - Preview | AYN InfoTech Ltd{% endblock %}
+{% block meta_description %}{{description}}{% endblock %}
+{% block meta_keywords %}{{keywords}}{% endblock %}
+
+{% block custom_css %}
+    <link rel="stylesheet" href="/static/assets/css/base-custom-css.css?v=2"/>
+{% endblock %}
+
+{% block content %}
+    <section>
+        <div class="mt-0">
+            <img class="blog_main_img" src="{{ post.image_src }}" alt="{{ post.alt_text }}"/>
+            <div class="blog_width mt-4">
+                <div class="col-md-12 pl-1">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{ url_for('mod_blog.blog_list') }}">Blogs</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{{ post.dashboard_title }}</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                {{ post.title|safe }}
+                <div class="row pull-right" data-aos="fade-left">
+                    <ul class="bglo_social_media_icon">
+                        <li><a href="#"><img src="/static/assets/img/icons/social/facebook.png" alt="Facebook Image" width="40px;"></a></li>
+                        <li><a href="#"><img src="/static/assets/img/icons/social/linkedin.png" alt="Linkedin Image" width="40px;"></a></li>
+                        <li><a href="#"><img src="/static/assets/img/icons/social/twitter.png" alt="Twitter Image" width="40px;"></a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                {{ post.content|safe }}
+            </div>
+        </div>
+    </section>
+
+    {% if random_blogs.first() %}
+        <section class="blog_width2">
+            <div class="container">
+                <div class="row mt-7">
+                    <div class="col-md-12 col-12 mb-4">
+                        <h3 class="col-md-12 col-12" data-aos="fade-left">Related Blog</h3>
+                    </div>
+                    {% for rec in random_blogs %}
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="blog_section" data-aos="fade-right">
+
+                                <a href="{{ url_for('mod_blog.blog_preview', id=rec.id) }}">
+                                    <div class="blog_images">
+                                        <img src="{{ rec.image_src }}" width="100%">
+                                    </div>
+
+
+                                    <div class="inner_padding">
+                                        <h4 class="title-clamp blog_title"><span>{{ rec.dashboard_title }}</span></h4>
+                                        <div class="line-clamp">
+                                            <p>{{ rec.description }}</p>
+                                        </div>
+                                        <div class="read_more_btn mt-4">
+                                                <span class="pull-left">
+                                                    {{ rec.published_date }}
+                                                </span>
+                                            <div class="read_more_arrow">
+                                                <a href="{{ url_for('mod_blog.blog_preview', id=rec.id) }}">
+                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    {% else %}
+        <section class="pt-10"/>
+    {% endif %}
+{% endblock %}

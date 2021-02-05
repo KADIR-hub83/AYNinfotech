@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block og_url %}https://www.ayninfotech.com/404/{% endblock %}
+{% block canon %}/404/{% endblock %}
+
+{% block custom_css %}
+    <link rel="stylesheet" href="/static/assets/css/base-custom-css-1.css?v=2"/>
+{% endblock %}
+
+{% block content %}
+<!-----------Error page----------->
+<section class="AynHeroImg page-section" id="1" style="background-image: url('/static/images/404/bg.png');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center img404">
+
+                    <img src="/static/images/404/404.png" class="img-fluid">
+                </div>
+                <div class="col-md-12 text-center img-moving">
+                    <div class="owl-carousel Slider404">
+                        <div class="single-testimonial">
+                            <img src="/static/images/404/line.png" class="img-fluid">
+                        </div>
+
+                        <div class="single-testimonial">
+                            <img src="/static/images/404/line.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}

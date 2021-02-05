@@ -1,0 +1,243 @@
+{% extends 'admin-base.html' %}
+
+{% block og_url %}https://www.ayninfotech.com{{ url_for(request.endpoint) }}{% endblock %}
+{% block canon %}{{ url_for(request.endpoint) }}{% endblock %}
+
+{% block page_title %}Blog Editor - Add | AYN InfoTech Ltd{% endblock %}
+{% block meta_description %}{{description}}{% endblock %}
+{% block meta_keywords %}{{keywords}}{% endblock %}
+
+{% block custom_css %}
+    <link rel="stylesheet" href="/static/assets/css/custom-css.css?v=2"/>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+    <link href="https://adminlte.io/themes/AdminLTE/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="mt-9"></div>
+    <form method="POST" id="add_blog">
+        <div class="container mb-9">
+            <div class="row mb-5">
+                <div class="input-group input-group-sm mb-3 col-sm-12 col-lg-7 col-md-7 order-1 order-sm-1 order-lg-1 order-md-1">
+                    <div class="input-group-prepend input-group-sm">
+                        <span class="input-group-text border-gray-800 bg-gray-300">URL Endpoint</span>
+                    </div>
+                    <input type="text" class="form-control border-gray-800" name="endpoint_url" id="endpoint_url" placeholder="Enter endpoint URL" required="required">
+                </div>
+
+                <div class="input-group input-group-sm mb-3 col-sm-12 col-lg-5 col-md-5 order-3 order-sm-3 order-lg-2 order-md-2">
+                    <div class="input-group-prepend input-group-sm">
+                        <span class="input-group-text border-gray-800 bg-gray-300"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                    </div>
+                    <input type="text" class="form-control border-gray-800" name="published_date" id="published_date" placeholder="Enter Date" required="required">
+                </div>
+
+                <div class="input-group mb-3 order-2 col-lg-7 col-md-7 error-text order-2 order-sm-2 order-lg-3 order-md-3" style="display: none">
+                    <b class="text-danger">URL Endpoint is already present in database</b>
+                </div>
+
+                <div class="input-group input-group-sm mb-3 col-sm-12 col-lg-12 col-md-12 order-4 order-sm-4 order-lg-4 order-md-4">
+                    <div class="input-group-prepend input-group-sm">
+                        <span class="input-group-text border-gray-800 bg-gray-300">Description</span>
+                    </div>
+                    <input type="text" class="form-control border-gray-800" name="description" id="description" placeholder="Enter Description" required="required">
+                </div>
+            </div>
+
+            <div class="card border border-gray-800 rounded-0 mb-5">
+                <h5 class="card-header bg-gray-300 border-black rounded-0 p-2">
+                    Image
+                    <i class="fa fa-edit float-right p-1 edit-blog-image"></i>
+                    <i class="fa fa-save float-right p-1 save-blog-image" style="display: none"></i>
+                </h5>
+
+                <div class="card-body">
+                    <div class="blog-image">
+                        {{ image|safe }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="input-group input-group-sm mb-3 col-sm-12 col-lg-12 col-md-12">
+                    <div class="input-group-prepend input-group-sm">
+                        <span class="input-group-text border-gray-800 bg-gray-300">Alt Text</span>
+                    </div>
+                    <input type="text" class="form-control border-gray-800" name="alt_text" id="alt_text" placeholder="Enter Alt Text" required="required">
+                </div>
+            </div>
+
+            <div class="card border border-gray-800 rounded-0 mb-5">
+                <h5 class="card-header bg-gray-300 border-black rounded-0 p-2">
+                    Title
+                    <i class="fa fa-edit float-right p-1 edit-blog-title"></i>
+                    <i class="fa fa-save float-right p-1 save-blog-title" style="display: none"></i>
+                </h5>
+
+                <div class="card-body">
+                    <div class="blog-title">
+                        {{ title|safe }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border border-gray-800 rounded-0 mb-5">
+                <h5 class="card-header bg-gray-300 border-black rounded-0 p-2">
+                    Content
+                    <i class="fa fa-edit float-right p-1 edit-blog-content"></i>
+                    <i class="fa fa-save float-right p-1 save-blog-content" style="display: none"></i>
+                </h5>
+
+                <div class="card-body">
+                    <div class="blog-content">
+                        {{ content|safe }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-check ml-5 my-2 pb-3">
+                    <input class="form-check-input" type="checkbox" id="blog_active" value="Active">
+                    <label class="form-check-label" for="blog_active">
+                        Activate Blog
+                    </label>
+                </div>
+            </div>
+
+            <button id="submit" class="btn btn-primary" type="submit">Save</button>
+        </div>
+    </form>
+{% endblock %}
+
+{% block custom_js %}
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+    <script src="https://adminlte.io/themes/AdminLTE/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script>
+
+        function activate_summernote(class_clicked) {
+            if(class_clicked == 'edit-blog-image') {
+                $(".blog-image").summernote({
+                    dialogsInBody: true,
+                    toolbar: [
+                        ['para', ['paragraph']],
+                        ['insert', ['picture', 'video']],
+                        ['view', ['fullscreen', 'codeview', 'help']]
+                    ]
+                });
+            }
+            if(class_clicked == 'edit-blog-title') {
+                $(".blog-title").summernote({
+                    dialogsInBody: true,
+                    placeholder: 'Title Here',
+                    height: 80,
+                    toolbar: [
+                        ['style', ['style']],
+                        ['font', ['bold', 'underline', 'clear']],
+                        ['color', ['color']],
+                        ['para', ['ul', 'ol', 'paragraph']],
+                        ['table', ['table']],
+                        ['insert', ['link', 'picture', 'video']],
+                        ['view', ['fullscreen', 'codeview', 'help']]
+                    ]
+                });
+            }
+            if(class_clicked == 'edit-blog-content') {
+                $(".blog-content").summernote({
+                    dialogsInBody: true,
+                    placeholder: 'Enter detail in this section',
+                    toolbar: [
+                        ['style', ['style']],
+                        ['font', ['bold', 'underline', 'clear']],
+                        ['color', ['color']],
+                        ['para', ['ul', 'ol', 'paragraph']],
+                        ['table', ['table']],
+                        ['insert', ['link', 'picture', 'video']],
+                        ['view', ['fullscreen', 'codeview', 'help']]
+                    ]
+                });
+            }
+        }
+
+        function destroy_summernote(class_clicked)
+        {
+            if(class_clicked == 'save-blog-image')
+                $(".blog-image").summernote('destroy');
+            if(class_clicked == 'save-blog-title')
+                $(".blog-title").summernote('destroy');
+            if(class_clicked == 'save-blog-content')
+                $(".blog-content").summernote('destroy');
+        }
+
+        $(document).on('click', '.edit-blog-image, .edit-blog-title, .edit-blog-content', function() {
+            $(this).hide();
+            $(this).next().show();
+            let class_clicked = $(this).attr('class').split(' ').pop();
+            activate_summernote(class_clicked);
+        });
+
+        $(document).on('click', '.save-blog-image, .save-blog-title, .save-blog-content', function() {
+            $(this).hide();
+            $(this).prev().show();
+            let class_clicked = $(this).attr('class').split(' ').pop();
+            destroy_summernote(class_clicked);
+        });
+
+        $('#published_date').datepicker({
+            autoclose: true,
+            format: "dd-M-yyyy",
+        });
+
+        $(document).on('change', '#endpoint_url', function () {
+            $.ajax({
+                url : '/get/'+$("#endpoint_url").val()+'/',
+                type : 'GET',
+                success : function(data){
+                    if (data.status == 404)
+                    {
+                        $('.error-text').show();
+                        $('#submit').attr("disabled", true);
+
+                        setTimeout(function(){
+                            $('#endpoint_url').val('');
+                            $('.error-text').hide();
+                            $('#submit').attr("disabled", false);
+                        },3000);
+                    }
+                },
+            })
+        });
+
+        $("#add_blog").submit(function( event ) {
+
+            $(".blog-image").summernote('destroy');
+            $(".blog-title").summernote('destroy');
+            $(".blog-content").summernote('destroy');
+
+            $("<input />").attr("type", "hidden")
+                .attr("name", "blog_image")
+                .attr("value", $(".blog-image").find("img").attr("src"))
+                .appendTo("#add_blog");
+
+            $("<input />").attr("type", "hidden")
+                .attr("name", "dashboard_title")
+                .attr("value", $(".blog-title").text())
+                .appendTo("#add_blog");
+
+            $("<input />").attr("type", "hidden")
+                .attr("name", "blog_title")
+                .attr("value", $(".blog-title").html())
+                .appendTo("#add_blog");
+
+            $("<input />").attr("type", "hidden")
+                .attr("name", "blog_content")
+                .attr("value", $(".blog-content").html())
+                .appendTo("#add_blog");
+
+            $("<input />").attr("type", "hidden")
+                .attr("name", "blog_active")
+                .attr("value", $("#blog_active:checked").val())
+                .appendTo("#add_blog");
+        });
+
+    </script>
+{% endblock %}
