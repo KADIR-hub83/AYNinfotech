@@ -576,7 +576,6 @@ def send_product_email(
 
 from components.mod_users import models as user_model
 from components.mod_blog import models as blog_model
-from components.mod_career import models as job_model
 
 from components.mod_product.controllers import mod_product
 from components.mod_need.controllers import mod_need
@@ -759,16 +758,10 @@ def career():
         applied_for = request.form.get("applied_for")
         message = request.form.get("message")
 
-        job = job_model.Jobs(
-            full_name=full_name,
-            phone=phone,
-            email=email,
-            resume=resume_path,
-            applied_for=applied_for,
-            message=message
-        )
-        db.session.add(job)
-        db.session.commit()
+        # TODO: mod_career/models.py me Jobs model banao aur yahan
+        # DB save wapas enable karo. Filhaal sirf resume save ho raha hai.
+        print(f"Career application received: {full_name}, {email}, {applied_for}")
+
         return redirect(url_for("career"))
     else:
         return render_template(
