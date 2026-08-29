@@ -6,26 +6,26 @@ CEDAR_DESCRIPTION = "AYN InfoTech provides HIPPA based healthcare software devel
 CEDAR_KEYWORDS = "Healthcare Software Development Company, EHR Software, Telemedicine Software, Healthcare Software, Electronic Health Record, Telehealth Service, Healthcare Software Development Company, EHR Solution"
 
 CEDAR_HEADING_1 = ["Cedar ", "Healthcare Solution"]
-CEDAR_IMAGE_1 = "/static/images/Product/1-Home\ –\ 7.png"
+CEDAR_IMAGE_1 = "/static/images/overview/landing/landing page hero main img.png"
 CEDAR_ALT_TEXT_1 = "Healthcare Software"
 CEDAR_PARA_1 = "Cedar is a healthcare solution to maintain medical records on the blockchain using Hyperledger. Cedar promises data security and complies with all standards and legal requirements for the maintenance of medical data. Use of blockchain technology ensures the immutability of data and hence the accuracy of Cedar's data."
 CEDAR_PRODUCT_DOC_BTN_1 = ["/cedar-healthcare/download/", "Product Document"]
 CEDAR_DEMO_VID_BTN_1 = ["#", "Watch Video"]
 
 CEDAR_HEADING_2 = ["Features of Cedar Healthcare"]
-CEDAR_FEATURES_2 = [["/static/images/Services/AI-Hero-33.svg", "EHR Software", "Electronic Health Record",
+CEDAR_FEATURES_2 = [["/static/features/cedar/Electronic Health Record.png", "EHR Software", "Electronic Health Record",
                      "EHR system is HIPAA integrated with Cedar Healthcare helps maintain patient medical history and information securely on the blockchain.",
                      "0.3s"],
-                    ["/static/images/Services/AI-Hero-33.svg", "EHR Systems", "e-Prescription Feature(eRx)",
+                    ["/static/features/cedar/e-Prescription Feature(eRx).png", "EHR Systems", "e-Prescription Feature(eRx)",
                      "e-Prescription enables secure transmission of prescriptions and medical reports among healthcare stakeholders.",
                      "0.6s"],
-                    ["/static/images/Services/AI-Hero-33.svg", "HIPAA", "Health Information Exchange",
+                    ["/static/features/cedar/Health Info Exchange.png", "HIPAA", "Health Information Exchange",
                      "HIE integrates with the latest electronic healthcare information to exchange medical data, maintaining HIPAA compliance.",
                      "0.9s"],
-                    ["/static/images/Services/AI-Hero-33.svg", "Blockchain Technology", "Blockchain Security",
+                    ["/static/features/cedar/Blockchain Security.png", "Blockchain Technology", "Blockchain Security",
                      "Blockchain technology provides incredible security and captures transaction records on blocks using a distributed ledger.",
                      "1.2s"],
-                    ["/static/images/Services/AI-Hero-33.svg", "Insurance Claims", "Insurance Claims",
+                    ["/static/features/cedar/Insurance Claims.png", "Insurance Claims", "Insurance Claims",
                      "Cedar Healthcare system facilitates insurance settlements and ensures the authenticity of claims.",
                      "1.5s"],
                     ["/static/images/Services/AI-Hero-33.svg", "Telemedicine Software", "Telemedicine and Telehealth",
@@ -34,7 +34,7 @@ CEDAR_FEATURES_2 = [["/static/images/Services/AI-Hero-33.svg", "EHR Software", "
 CEDAR_KNOW_MORE_BTN_2 = ["/cedar-healthcare/features/", "Know More About Features"]
 
 CEDAR_HEADING_3 = ["Leveraging Technologies to Empower Healthcare"]
-CEDAR_IMAGE_3 = "/static/images/Services/AI-Hero-33.svg"
+CEDAR_IMAGE_3 = "/static/images/leveraging/Leveraging.png"
 CEDAR_ALT_TEXT_3 = "Healthcare Technologies"
 CEDAR_PARA_3 = "Cedar Healthcare Software is the next step in the healthcare industry. Our core competence is to enhance healthcare services that we provide to our customers with the application of various technologies and proprietary platforms that complement our customer's business models"
 CEDAR_FEATURES_3 = ["The implementation of Cloud Computing in Cedar Healthcare Software has improved facilities like telemedicine software, virtual medical adherence and pre-hospitalization care plans.",
@@ -43,7 +43,7 @@ CEDAR_FEATURES_3 = ["The implementation of Cloud Computing in Cedar Healthcare S
                     "AI and Machine Learning enable Cedar Healthcare to warn doctors and patients about possible adverse side effects of drug-drug interaction."]
 
 CEDAR_HEADING_4 = ["How Cedar Healthcare Enhance Healthcare Industry?"]
-CEDAR_IMAGE_4 = "/static/images/Services/AI-Hero-33.svg"
+CEDAR_IMAGE_4 = "/static/images/how/Group 932@2x.png"
 CEDAR_ALT_TEXT_4 = "Healthcare Industries"
 CEDAR_PARA_4 = "Cedar Healthcare is a blockchain-based software that enables healthcare users to transfer and access healthcare information securely. It also improves medical business management, which further improves financial efficiency and cut down costs."
 CEDAR_FEATURES_4 = ["Medical data is maintained in encrypted formats and cannot be tampered.",
@@ -54,22 +54,22 @@ CEDAR_LEARN_MORE_BTN_4 = ["/cedar-healthcare/what-is-healthcare/", "Learn More A
 
 
 CEDAR_HEADING_5 = ["Why Customer Choose Cedar Healthcare"]
-CEDAR_FEATURES_5 = [["/static/images/Services/AI-Hero-33.svg", "Customer Support", "Customer Support",
+CEDAR_FEATURES_5 = [["/static/images/why/cedar/Customer Support.png", "Customer Support", "Customer Support",
                      "You can communicate with teams who are highly skilled and experienced in managing healthcare software 24/7 to offer the best solution. With better and faster insights, you will have access to information to work smarter and quicker."
                      ],
-                    ["/static/images/Services/AI-Hero-33.svg", "Electronic Health Record", "Secure and Reliable",
+                    ["/static/images/why/cedar/Secure & Reliable.png", "Electronic Health Record", "Secure and Reliable",
                      "Cedar Healthcare is a blockchain-based secure platform that allows only authorized users to modify health data. The data stored is time-stamped and dated, which makes it hard to tamper. It securely manages health records for a smarter approach to healthcare."],
-                    ["/static/images/Services/AI-Hero-33.svg", "Product Enginnering", "Product Engineering",
+                    ["/static/images/why/cedar/Product Engineering.png", "Product Enginnering", "Product Engineering",
                      "We offer custom products and flexible services to industries. Our domain experts can help you align your product ideas to the continually changing digital healthcare industry. We provide end-to-end product development, enhancement, UI/UX design service, and cloud services."],
-                    ["/static/images/Services/AI-Hero-33.svg", "Easy Customization", "Easy Customization",
+                    ["/static/images/why/cedar/Easy Customisation.png", "Easy Customization", "Easy Customization",
                      "Open APIs make Cedar Healthcare a feasible and customizable platform, where you can easily integrate various functionalities to fulfill any future requirements. It provides instant updates and notifications by integrating with various communication channels."],]
 
 CEDAR_HEADING_6 = ["Build your Healthcare as per your Requirements"]
 CEDAR_PARA_6 = "The healthcare sector has a unique way to operate and has various functionalities. It has various modules that can be integrated easily as per requirements. Cedar healthcare has a creative User Interface which makes it a user-friendly software."
-CEDAR_FEATURES_6 = [["", "Revenue Cycle Management", "Revenue Cycle Management optimizes your returns and shortens the revenue cycle that combines EHR software workflows and payment collections into a simple single source. We program some features for verifying insurance eligibility and claims. We created custom Business Intelligence (BI) for analyzing critical data from the hospital information systems repository. RCM healthcare reports use intuitive data visualizations of cashflow to catch missed revenue opportunities due to coding error or technology failure.", ""],
-                    ["", "Cloud Migration Service", "We provide a smooth and efficient cloud migration service considering data security and regulatory compliance. Cedar Healthcare allows data to move smoothly among patients, hospitals, EHR systems, RCM, and other1 channels in the digital healthcare systems securely. Cedar healthcare cloud migration provides greater mobility and security(HIPAA compliance).", ""],
-                    ["", "Document Management Solutions (DMS)", "We build document management modules to access patients' Electronic Health Records (EHR) to maintain notes from physicians and pharmacists, accepting faxes electronically, and maintain audit trails. DMS integrates with scanning technology to capture and automatically organize information from physical forms for better customer experience.", ""],
-                    ["", "Healthcare Blockchain Solution", "We offer tailor-made healthcare solutions that are powered and executed by blockchain technology, i.e., Hyperledger. Blockchain-based software empowers healthcare users with ease to access data to speed up the process of patient care in hospitals with high accuracy and consistency.", ""]]
+CEDAR_FEATURES_6 = [["/static/images/build/cedar/Revenue-Cycle-Management.png", "Revenue Cycle Management", "Revenue Cycle Management optimizes your returns and shortens the revenue cycle that combines EHR software workflows and payment collections into a simple single source. We program some features for verifying insurance eligibility and claims. We created custom Business Intelligence (BI) for analyzing critical data from the hospital information systems repository. RCM healthcare reports use intuitive data visualizations of cashflow to catch missed revenue opportunities due to coding error or technology failure.", ""],
+                    ["/static/images/build/cedar/Cloud-Migration-Service.png", "Cloud Migration Service", "We provide a smooth and efficient cloud migration service considering data security and regulatory compliance. Cedar Healthcare allows data to move smoothly among patients, hospitals, EHR systems, RCM, and other1 channels in the digital healthcare systems securely. Cedar healthcare cloud migration provides greater mobility and security(HIPAA compliance).", ""],
+                    ["/static/images/build/cedar/Document-Management-Solutions-(DMS).png", "Document Management Solutions (DMS)", "We build document management modules to access patients' Electronic Health Records (EHR) to maintain notes from physicians and pharmacists, accepting faxes electronically, and maintain audit trails. DMS integrates with scanning technology to capture and automatically organize information from physical forms for better customer experience.", ""],
+                    ["/static/images/build/cedar/Healthcare-Blockchain-Solution.png", "Healthcare Blockchain Solution", "We offer tailor-made healthcare solutions that are powered and executed by blockchain technology, i.e., Hyperledger. Blockchain-based software empowers healthcare users with ease to access data to speed up the process of patient care in hospitals with high accuracy and consistency.", ""]]
 
 WHY_CEDAR = "AYN InfoTech is a leading IT company that has energetic and innovative teams of developers who are experts in the field of healthcare. Cedar Healthcare is a smart solution to overcome challenges and set new heights of healthcare services."
 
@@ -166,28 +166,28 @@ PINE_PRODUCT_DOC_BTN_1 = ["/pine-customer-relationship-management/download/", "P
 PINE_DEMO_VID_BTN_1 = ["#", "Watch Video"]
 
 PINE_HEADING_2 = ["Features of Pine CRM"]
-PINE_FEATURES_2 = [["/static/images/Services/AI-Hero-33.svg", "Sales CRM Software", "Sales Automation",
+PINE_FEATURES_2 = [["/static/features/pine/", "Sales CRM Software", "Sales Automation",
                     "Pine CRM solution replaces mundane processes by intelligent workflows and macros to boost productivity of the company.",
                      "0.3s"],
-                   ["/static/images/Services/AI-Hero-33.svg", "Analytics", "Analytics",
+                   ["/static/features/pine/Analytics.png", "Analytics", "Analytics",
                     "CRM analytics comprehends customer requirements and market trends to help make better data-driven decisions.",
                      "0.6s"],
-                   ["/static/images/Services/AI-Hero-33.svg", "Omnichannel", "Omnichannel",
+                   ["/static/features/pine/OmniChannel.png", "Omnichannel", "Omnichannel",
                     "Offer multiple channels of communication to connect with customers, all while centralizing information that increases sales teams' productivity.",
                      "0.9s"],
-                   ["/static/images/Services/AI-Hero-33.svg", "Performance Management", "Performance Management",
+                   ["/static/features/pine/Performance Management.png", "Performance Management", "Performance Management",
                     "Analyse your company's performance and predict its future potential to meet changing marketing trends.",
                      "1.2s"],
-                   ["/static/images/Services/AI-Hero-33.svg", "Customizable Features", "Customizable Features",
+                   ["/static/features/pine/Customizable Features.png", "Customizable Features", "Customizable Features",
                     "Easily customizable CRM system helps reduce insufficiencies and fulfill your business requirements.",
                      "1.5s"],
-                   ["/static/images/Services/AI-Hero-33.svg", "Marketing Automation", "Marketing Automation",
+                   ["/static/features/pine/Marketing Automation.png", "Marketing Automation", "Marketing Automation",
                     "Run campaigns, events and surveys efficiently to deliver quality leads to sales teams.",
                      "1.8s"]]
 PINE_KNOW_MORE_BTN_2 = ["/pine-customer-relationship-management/features/", "Know More About Features"]
 
 PINE_HEADING_3 = ["Bring the Smart CRM to Your Business"]
-PINE_IMAGE_3 = "/static/images/Services/AI-Hero-33.svg"
+PINE_IMAGE_3 = "/static/images/leveraging/Bring the Smart.png"
 PINE_ALT_TEXT_3 = "Sales CRM Software"
 PINE_PARA_3 = "Pine CRM solution is something more than what usual CRM does. It is powered with the latest technologies to cope up with market trends and tailored to fulfil business requirements. Pine CRM has set new standards to take your business to the next level."
 PINE_FEATURES_3 = ["The implementation of CRM Analytics makes sense of colossal data, including real-time behavioural data from customer interactions.",
@@ -207,25 +207,25 @@ PINE_FEATURES_4 = ["Provides you with a \"developer platform\" to create your ow
 PINE_LEARN_MORE_BTN_4 = ["/pine-customer-relationship-management/what-is-crm", "Learn More About CRM"]
 
 PINE_HEADING_5 = ["Why Customer Choose Pine CRM"]
-PINE_FEATURES_5 = [["/static/images/Services/AI-Hero-33.svg", "Mobile Accessibility", "Mobile Accessibility",
+PINE_FEATURES_5 = [["/static/images/why/pine/Mobile Accessibility.png", "Mobile Accessibility", "Mobile Accessibility",
                     "Let your employees be more productive and fast by providing them access to data anywhere and anytime. Pine CRM software enhances the productivity of employees and provides a better experience to customers. You can close deals, track marketing, and share files on any device with Pine CRM.",
                      "0.3s"],
-                   ["/static/images/Services/AI-Hero-33.svg", "Secure and Reliable", "Secure and Reliable",
+                   ["/static/images/why/pine/Secure&Reliable.png", "Secure and Reliable", "Secure and Reliable",
                     "Pine CRM solution has advanced security and protects data by allowing access to only authorized users. We have implemented all security features like encryption, audit logs, IP restrictions, and two-factor authentications.",
                      "0.6s"],
-                   ["/static/images/Services/AI-Hero-33.svg", "CRM Analytics", "CRM Analytics",
+                   ["/static/images/why/pine/CRM Analytics.png", "CRM Analytics", "CRM Analytics",
                     "Let your employees work smarter with AI-powered Pine CRM for better analytics. CRM analytics gives proper data insight to make better data-driven decisions. It enhances customer experience and understand customers in a whole new way and automate mundane processes to increase productivity.",
                      "0.9s"],
-                   ["/static/images/Services/AI-Hero-33.svg", "Robust Customer Support", "Robust Customer Support",
+                   ["/static/images/why/pine/Robust Customer Support.png", "Robust Customer Support", "Robust Customer Support",
                     "AYN InfoTech provides intellectual customer support to serve you with the best solution within the timeline. They can assist you with all issues, whether big or small, technical or non-technical, 24/7.",
                      "1.2s"],]
 
 PINE_HEADING_6 = ["Build your CRM as per your Requirements"]
 PINE_PARA_6 = "Each business has unique ways to operate their business processes and services. With the Pine developer platform, you can create your own module and customer relationship management platform from scratch. You can customize solutions by adding exclusive new features and develop modules, buttons and various workflows."
-PINE_FEATURES_6 = [["", "CRM Development Solution", "AYN InfoTech provides custom cloud-based customer relationship management software development and custom features that extend CRM automation, features and functionalities. Enhance your customer lifecycle journey and experience by getting perfectly customized software.", ""],
-                   ["", "CRM Migration Solution", "AYN InfoTech provides smooth, easy, cost-effective and secure data migration from your old system. Pine Customer Relationship Management values and ensures no disruptive deployment delay. We remove all the outdated parameters and enhance Customer Relationship Management Software for better business growth.", ""],
-                   ["", "CRM Implementation Tools", "We have developed integration tools that include custom rules, task management, calendar, task notification, and automated usability processes. Implementation is one of the important factors behind the success of any Customer Relationship Management Software.", ""],
-                   ["", "CRM Integration", "Our SaaS-based CRM Software system includes CRM integration with various social media platforms like WhatsApp, Instagram, Messenger and LinkedIn. It is integrated with other1 functionalities like call, email, SMS and multiple other1 Third party APIs.", ""]]
+PINE_FEATURES_6 = [["/static/images/build/pine/CRM-Development-Solution.png", "CRM Development Solution", "AYN InfoTech provides custom cloud-based customer relationship management software development and custom features that extend CRM automation, features and functionalities. Enhance your customer lifecycle journey and experience by getting perfectly customized software.", ""],
+                   ["/static/images/build/pine/CRM-Migrattion-Solution.png", "CRM Migration Solution", "AYN InfoTech provides smooth, easy, cost-effective and secure data migration from your old system. Pine Customer Relationship Management values and ensures no disruptive deployment delay. We remove all the outdated parameters and enhance Customer Relationship Management Software for better business growth.", ""],
+                   ["/static/images/build/pine/CRM Implementation Tools.png", "CRM Implementation Tools", "We have developed integration tools that include custom rules, task management, calendar, task notification, and automated usability processes. Implementation is one of the important factors behind the success of any Customer Relationship Management Software.", ""],
+                   ["/static/images/build/pine/CRM-Integration-2.png", "CRM Integration", "Our SaaS-based CRM Software system includes CRM integration with various social media platforms like WhatsApp, Instagram, Messenger and LinkedIn. It is integrated with other1 functionalities like call, email, SMS and multiple other1 Third party APIs.", ""]]
 
 WHY_PINE = "Our mission and vision inspire us to build better innovative products for bringing out the change in the healthcare sector. AYN InfoTech was established in 2009 with a vision to provide world-class IT services and smart products across the world. We registered AYN InfoTech in 2017 and is one of the best CRM software provider companies. It achieved great success by satisfying our esteemed customers."
 

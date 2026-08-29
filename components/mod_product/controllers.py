@@ -43,6 +43,7 @@ def cedar():
                            para_6=CEDAR_PARA_6,
                            features_6=CEDAR_FEATURES_6,
 
+
                            why_product=WHY_CEDAR,
                            active_menu=ACTIVE_STATUS)
 

@@ -138,7 +138,7 @@ def contact():
         db.session.add(contact_form)
         db.session.commit()
 
-        send_email(name=name, email=work_email, query=message, mobile=phone)
+        # send_email(name=name, email=work_email, query=message, mobile=phone)
         return redirect(url_for('thankyou', type='contact'))
     return render_template('other/contact.html',active_menu=["", "", "", "", "", "", "menu-active"], form=form)
 

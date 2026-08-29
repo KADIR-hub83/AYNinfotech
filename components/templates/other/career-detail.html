@@ -1,8 +1,9 @@
 {% extends 'base.html' %} {% block og_url %}https://www.ayninfotech.com{{ url_for(request.endpoint) }}{% endblock %}
-{% block canon %}/careers/bde/{% endblock %} {% block page_title %}Current Job Opening for Business Development
-Executive | AYN InfoTech{% endblock %} {% block meta_description
+{% block canon %}/careers/bde/{% endblock %}
+{% block page_title %}Current Job Opening for Business DevelopmentExecutive | AYN InfoTech{% endblock %}
+{% block meta_description
 %}Currently, We have an opening for a Business Development Executive. Who has 2+ years of experience as a Business
-Development Executive?{% endblock %} {% block meta_keywords %}Business Development Executive{% endblock %}
+Development Executive{% endblock %} {% block meta_keywords %}Business Development Executive{% endblock %}
 {% block custom_css %}{% endblock %} {% block content %}
 <nav class="navigation" id="mainNav">
     <a class="navigation__link1" href="#1"><span>Section 1</span></a>
@@ -36,12 +37,9 @@ Development Executive?{% endblock %} {% block meta_keywords %}Business Developme
         <div class=" content-wrapper">
             <div class="row ">
                 <div class="col-md-12">
-                    <h4>Job Description:</h4>
-                    <ol>
-                        <li>Good Communication skills. </li>
-                        <li>Looking for IT sales, International Marketing, Service sales.</li>
-                        <li>Cold Calling, Lead Generation.</li>
-                    </ol>
+                    <h4>{{title_2}}</h4>
+                    <p>{{para_2[0]}}</p>
+
                     <a href="mailto:hr@ayninfotech.com" class="home_btn">Apply</a>
                 </div>
             </div>

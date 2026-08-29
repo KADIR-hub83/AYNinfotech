@@ -15,6 +15,9 @@ def aiml():
                            image_1=AIML_IMAGE_1,
                            alt_text_1=AIML_ALT_TEXT_1,
                            para_1=AIML_PARA_1,
+                           title_2=AIML_TITLE_2,
+                           para_2=AIML_PARA_2,
+
                            active_menu=ACTIVE_STATUS)
 
 @mod_career.route('/careers/nodejs/')
@@ -28,6 +31,8 @@ def nodejs():
                            image_1=NODE_IMAGE_1,
                            alt_text_1=NODE_ALT_TEXT_1,
                            para_1=NODE_PARA_1,
+                           title_2=NODE_TITLE_2,
+                           para_2=NODE_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 @mod_career.route('/careers/react-native/')
@@ -41,6 +46,8 @@ def react():
                            image_1=REACT_IMAGE_1,
                            alt_text_1=REACT_ALT_TEXT_1,
                            para_1=REACT_PARA_1,
+                           title_2=REACT_TITLE_2,
+                           para_2=REACT_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 @mod_career.route('/careers/technical-lead/')
@@ -54,6 +61,8 @@ def technical():
                            image_1=TECH_IMAGE_1,
                            alt_text_1=TECH_ALT_TEXT_1,
                            para_1=TECH_PARA_1,
+                           title_2=TECH_TITLE_2,
+                           para_2=TECH_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 @mod_career.route('/careers/business-analyst/')
@@ -67,6 +76,8 @@ def ba():
                            image_1=BUS_IMAGE_1,
                            alt_text_1=BUS_ALT_TEXT_1,
                            para_1=BUS_PARA_1,
+                           title_2=BUS_TITLE_2,
+                           para_2=BUS_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 @mod_career.route('/careers/software-architect/')
@@ -80,6 +91,8 @@ def software_arc():
                            image_1=SA_IMAGE_1,
                            alt_text_1=SA_ALT_TEXT_1,
                            para_1=SA_PARA_1,
+                           title_2=SA_TITLE_2,
+                           para_2=SA_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 @mod_career.route('/careers/bdm/')
@@ -93,6 +106,8 @@ def bdm():
                            image_1=BDM_IMAGE_1,
                            alt_text_1=BDM_ALT_TEXT_1,
                            para_1=BDM_PARA_1,
+                           title_2=BDM_TITLE_2,
+                           para_2=BDM_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 @mod_career.route('/careers/bde/')
@@ -106,6 +121,8 @@ def bde():
                            image_1=BDE_IMAGE_1,
                            alt_text_1=BDE_ALT_TEXT_1,
                            para_1=BDE_PARA_1,
+                           title_2=BDE_TITLE_2,
+                           para_2=BDE_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 @mod_career.route('/careers/technical-writer/')
@@ -119,6 +136,8 @@ def technical_writer():
                            image_1=TW_IMAGE_1,
                            alt_text_1=TW_ALT_TEXT_1,
                            para_1=TW_PARA_1,
+                           title_2=TW_TITLE_2,
+                           para_2=TW_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 
@@ -133,6 +152,8 @@ def blockchain_developer():
                            image_1=BCD_IMAGE_1,
                            alt_text_1=BCD_ALT_TEXT_1,
                            para_1=BCD_PARA_1,
+                           title_2=BCD_TITLE_2,
+                           para_2=BCD_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 @mod_career.route('/careers/blockchain-architect/')
@@ -146,6 +167,8 @@ def blockchain_architect():
                            image_1=BASBD_IMAGE_1,
                            alt_text_1=BASBD_ALT_TEXT_1,
                            para_1=BASBD_PARA_1,
+                           title_2=BASBD_TITLE_2,
+                           para_2=BASBD_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 @mod_career.route('/careers/hr-it-recruiter/')
@@ -159,6 +182,8 @@ def hr_it_recruiter():
                            image_1=HR_IMAGE_1,
                            alt_text_1=HR_ALT_TEXT_1,
                            para_1=HR_PARA_1,
+                           title_2=HR_TITLE_2,
+                           para_2=HR_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 
@@ -173,6 +198,8 @@ def ui_developer():
                            image_1=UI_IMAGE_1,
                            alt_text_1=UI_ALT_TEXT_1,
                            para_1=UI_PARA_1,
+                           title_2=UI_TITLE_2,
+                           para_2=UI_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 
@@ -187,6 +214,8 @@ def reactjs_developer():
                            image_1=JS_IMAGE_1,
                            alt_text_1=JS_ALT_TEXT_1,
                            para_1=JS_PARA_1,
+                           title_2=JS_TITLE_2,
+                           para_2=JS_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 
@@ -201,6 +230,8 @@ def ux_designer():
                            image_1=UX_IMAGE_1,
                            alt_text_1=UX_ALT_TEXT_1,
                            para_1=UX_PARA_1,
+                           title_2=UX_TITLE_2,
+                           para_2=UX_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 
@@ -215,6 +246,8 @@ def angular_developer():
                            image_1=AD_IMAGE_1,
                            alt_text_1=AD_ALT_TEXT_1,
                            para_1=AD_PARA_1,
+                           title_2=AD_TITLE_2,
+                           para_2=AD_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 
@@ -229,6 +262,8 @@ def technical_manager():
                            image_1=TM_IMAGE_1,
                            alt_text_1=TM_ALT_TEXT_1,
                            para_1=TM_PARA_1,
+                           title_2=TM_TITLE_2,
+                           para_2=TM_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 
@@ -243,6 +278,8 @@ def cto():
                            image_1=CTO_IMAGE_1,
                            alt_text_1=CTO_ALT_TEXT_1,
                            para_1=CTO_PARA_1,
+                           title_2=CTO_TITLE_2,
+                           para_2=CTO_PARA_2,
                            active_menu=ACTIVE_STATUS)
 
 
@@ -257,5 +294,7 @@ def sales_head():
                            image_1=SALES_IMAGE_1,
                            alt_text_1=SALES_ALT_TEXT_1,
                            para_1=SALES_PARA_1,
+                           title_2=SALES_TITLE_2,
+                           para_2=SALES_PARA_2,
                            active_menu=ACTIVE_STATUS)
 

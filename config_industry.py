@@ -172,7 +172,7 @@ BANKING_DESCRIPTION = "We provide customized digital banking software to automat
 BANKING_KEYWORDS = "CRM Services, Wealth Management Services, Currency Management, Retail Banking Solutions, Banking Delivery Channels, FAM"
 
 BANKING_HEADING_1 = ["Digitizing ", "Banking"]
-BANKING_IMAGE_1 = "/static/assets/img/5_Industry/banking/bank.svg"
+BANKING_IMAGE_1 = "/static/industry/banking/Banking.png"
 BANKING_ALT_TEXT_1 = "Digitizing Banking"
 BANKING_PARA_1 = "Mitigating dynamic disruption in banking by leveraging digital technologies and expert knowledge."
 
